@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: Scene_MovieNight
+  m_EditorClassIdentifier: 
+  sceneName: Movie Night
+  displayName: "First Meeting at the Caf\xE9"
+  backgroundSprite: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - Hello for a Day..!
+  - I Like this Scared Movie..
+  - I also watch Harry Potter Movie
+  questions:
+  - questionText: Which Movie I like The Most ?
+    choices:
+    - Harry Potter
+    - Shah Rukh Khan
+    - Anime
+    - Salaam Khan
+    correctAnswerIndex: 3
+    correctResponse: You remembered! That's so sweet!
+    wrongResponse: You... you weren't listening?
+  - questionText: Which Jones Like the Most ?
+    choices:
+    - Scaries Moveis
+    - Fun Movies
+    - Documentry
+    - Suspense Movies
+    correctAnswerIndex: 3
+    correctResponse: You remembered! That's so sweet!
+    wrongResponse: You... you weren't listening?
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 10
