@@ -71,12 +71,6 @@ namespace TimeLessLove.Managers
             }
         }
 
-        IEnumerator Start()
-        {
-            yield return new WaitForSeconds(0.5f);
-            LoadNextScene();
-        }
-
         /// <summary>
         /// Loads a scene by name with transition effect
         /// </summary>
@@ -96,9 +90,8 @@ namespace TimeLessLove.Managers
         /// </summary>
         public void LoadNextScene()
         {
-            // int nextSceneIndex = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
-            // LoadScene(SceneManager.GetSceneByBuildIndex(nextSceneIndex).name);
-            LoadScene("Gameplay");
+            int nextSceneIndex = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
+            LoadScene(SceneManager.GetSceneByBuildIndex(nextSceneIndex).name);
         }
 
         /// <summary>
@@ -107,6 +100,12 @@ namespace TimeLessLove.Managers
         public void ReloadCurrentScene()
         {
             LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+
+        public void TransitionToScene_(string sceneName)
+        {
+            StartCoroutine(TransitionToScene(sceneName));
         }
 
         /// <summary>

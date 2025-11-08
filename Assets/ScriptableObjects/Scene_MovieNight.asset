@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Scene_MovieNight
   m_EditorClassIdentifier: 
   sceneName: Movie Night
-  displayName: "First Meeting at the Caf\xE9"
-  backgroundSprite: {fileID: 0}
+  displayName: Movie Night
+  backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
   - Hello for a Day..!
@@ -36,7 +36,7 @@ MonoBehaviour:
     - Fun Movies
     - Documentry
     - Suspense Movies
-    correctAnswerIndex: 3
+    correctAnswerIndex: 0
     correctResponse: You remembered! That's so sweet!
     wrongResponse: You... you weren't listening?
   perfectAffectionBonus: 10

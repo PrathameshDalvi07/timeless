@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Meeting
   displayName: "First Meeting at the Caf\xE9"
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 0c10ee23b14114c8fb6e850127a41eb5, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
   - Hi...!
