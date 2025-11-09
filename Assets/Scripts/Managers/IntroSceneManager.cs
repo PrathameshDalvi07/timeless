@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using DG.Tweening;
 
 namespace TimeLessLove.Managers
 {
@@ -26,6 +27,9 @@ namespace TimeLessLove.Managers
 
         private bool isRevealing = false;
         private bool isComplete = false;
+
+        [SerializeField] SpriteRenderer gameNameSR;
+        [SerializeField] Transform[] cloudTransforms;
 
         private void Start()
         {
@@ -67,8 +71,20 @@ namespace TimeLessLove.Managers
         {
             isRevealing = true;
 
+            gameNameSR.DOFade(1f, delayBeforeStart);
+            StartCloudMovement();
+
             // Initial delay before starting
             yield return new WaitForSeconds(delayBeforeStart);
+
+            // Set Camera Movement Down - It should Feel Like Moving from Sky to Ground at Ease
+            if (Camera.main != null)
+            {
+                Camera.main.transform.DOMoveY(Camera.main.transform.position.y - 10f, 10f)
+                    .SetEase(Ease.InOutQuad);
+            }
+
+            yield return new WaitForSeconds(10f);
 
             // Loop through each sentence
             for (int i = 0; i < textToReveal.Length; i++)
@@ -119,6 +135,38 @@ namespace TimeLessLove.Managers
 
             // All text has been revealed
             CompleteIntro();
+        }
+
+        void StartCloudMovement()
+        {
+            if (cloudTransforms == null || cloudTransforms.Length == 0)
+            {
+                Debug.LogWarning("IntroSceneManager: No cloud transforms assigned!");
+                return;
+            }
+
+            // Animate each cloud to move either left or right
+            foreach (Transform cloud in cloudTransforms)
+            {
+                if (cloud == null) continue;
+
+                // Randomly choose left or right direction
+                float direction = Random.Range(0, 2) == 0 ? -1f : 1f;
+
+                // Random movement distance (adjust these values based on your screen size)
+                float moveDistance = Random.Range(15f, 25f) * direction;
+
+                // Random duration for variation
+                float duration = Random.Range(10f, 25f);
+
+                // Create the target position
+                Vector3 targetPosition = cloud.position + new Vector3(moveDistance, 0f, 0f);
+
+                // Animate cloud movement with DOTween
+                cloud.DOMove(targetPosition, duration)
+                    .SetEase(Ease.Linear)
+                    .SetLoops(-1, LoopType.Yoyo); // Loop infinitely with yoyo effect
+            }
         }
 
         /// <summary>
