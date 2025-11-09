@@ -116,6 +116,8 @@ namespace TimeLessLove.Managers
                 continueButton.onClick.AddListener(() =>
                 {
                     PlayButtonClickSound();
+                    // Disable button immediately to prevent multiple clicks
+                    continueButton.interactable = false;
                     OnContinueClicked?.Invoke();
                 });
             }
@@ -239,6 +241,9 @@ namespace TimeLessLove.Managers
                 string sign = affectionChange >= 0 ? "+" : "";
                 affectionChangeText.text = $"Affection: {sign}{affectionChange}";
             }
+
+            // Enable continue button for user interaction
+            EnableContinueButton();
 
             Debug.Log($"<color={(correct ? "green" : "red")}>Result: {(correct ? "Correct" : "Wrong")}</color>");
         }
@@ -406,6 +411,17 @@ namespace TimeLessLove.Managers
             }
 
             selectedAnswerIndex = -1;
+        }
+
+        /// <summary>
+        /// Enables the continue button for the next interaction
+        /// </summary>
+        public void EnableContinueButton()
+        {
+            if (continueButton != null)
+            {
+                continueButton.interactable = true;
+            }
         }
 
         public void EnableDialoguePanel()

@@ -32,6 +32,7 @@ namespace TimeLessLove.Managers
         private int currentQuestionIndex = 0;
         private int correctAnswersCount = 0;
         private bool isFirstDialogue = true; // Track if this is the first dialogue
+        private bool isTransitioning = false; // Prevent multiple continue button clicks
 
         private enum GameState
         {
@@ -352,6 +353,14 @@ namespace TimeLessLove.Managers
         /// </summary>
         private void OnContinueAfterResult()
         {
+            // Prevent multiple clicks from triggering multiple transitions
+            if (isTransitioning)
+            {
+                Debug.Log("Already transitioning, ignoring continue button click");
+                return;
+            }
+
+            isTransitioning = true;
             currentQuestionIndex++;
             StartCoroutine(TransitionToNextQuestion());
         }
@@ -366,10 +375,12 @@ namespace TimeLessLove.Managers
             if (currentQuestionIndex < currentQuestions.Count)
             {
                 DisplayCurrentQuestion();
+                isTransitioning = false; // Reset flag when next question is displayed
             }
             else
             {
                 EndQuestionPhase();
+                isTransitioning = false; // Reset flag when phase ends
             }
         }
 
