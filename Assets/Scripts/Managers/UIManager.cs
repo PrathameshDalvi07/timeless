@@ -119,11 +119,16 @@ namespace TimeLessLove.Managers
                 questionText.text = question.questionText;
             }
 
-            // Reset selection
+            // Reset selection and disable submit button
             selectedAnswerIndex = -1;
             if (submitAnswerButton != null)
             {
                 submitAnswerButton.interactable = false;
+                // Force visual update to show disabled state
+                if (submitAnswerButton.targetGraphic != null)
+                {
+                    submitAnswerButton.targetGraphic.color = submitAnswerButton.colors.disabledColor;
+                }
             }
 
             // Display answer choices
@@ -166,10 +171,15 @@ namespace TimeLessLove.Managers
                 answerButtons[i].targetGraphic.color = (i == index) ? selectedButtonColor : normalButtonColor;
             }
 
-            // Enable submit button
+            // Enable submit button and refresh its visual state
             if (submitAnswerButton != null)
             {
                 submitAnswerButton.interactable = true;
+                // Force visual update to show enabled state
+                if (submitAnswerButton.targetGraphic != null)
+                {
+                    submitAnswerButton.targetGraphic.color = submitAnswerButton.colors.normalColor;
+                }
             }
 
             OnAnswerSelected?.Invoke(index);
