@@ -161,6 +161,9 @@ namespace TimeLessLove.Managers
                 var colors = answerButtons[i].colors;
                 colors.normalColor = (i == index) ? selectedButtonColor : normalButtonColor;
                 answerButtons[i].colors = colors;
+
+                // Force the button to refresh its visual state
+                answerButtons[i].targetGraphic.color = (i == index) ? selectedButtonColor : normalButtonColor;
             }
 
             // Enable submit button
@@ -356,6 +359,9 @@ namespace TimeLessLove.Managers
                 var colors = button.colors;
                 colors.normalColor = normalButtonColor;
                 button.colors = colors;
+
+                // Reset the visual state
+                button.targetGraphic.color = normalButtonColor;
             }
 
             selectedAnswerIndex = -1;
