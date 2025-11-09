@@ -75,7 +75,11 @@ namespace TimeLessLove.Managers
             // Next dialogue button
             if (nextDialogueButton != null)
             {
-                nextDialogueButton.onClick.AddListener(() => OnNextDialogueClicked?.Invoke());
+                nextDialogueButton.onClick.AddListener(() =>
+                {
+                    PlayButtonClickSound();
+                    OnNextDialogueClicked?.Invoke();
+                });
             }
 
             // Answer buttons
@@ -84,21 +88,33 @@ namespace TimeLessLove.Managers
                 int index = i; // Capture for lambda
                 if (answerButtons[i] != null)
                 {
-                    answerButtons[i].onClick.AddListener(() => SelectAnswer(index));
+                    answerButtons[i].onClick.AddListener(() =>
+                    {
+                        PlayButtonClickSound();
+                        SelectAnswer(index);
+                    });
                 }
             }
 
             // Submit answer button
             if (submitAnswerButton != null)
             {
-                submitAnswerButton.onClick.AddListener(() => OnSubmitAnswerClicked?.Invoke());
+                submitAnswerButton.onClick.AddListener(() =>
+                {
+                    PlayButtonClickSound();
+                    OnSubmitAnswerClicked?.Invoke();
+                });
                 submitAnswerButton.interactable = false;
             }
 
             // Continue button
             if (continueButton != null)
             {
-                continueButton.onClick.AddListener(() => OnContinueClicked?.Invoke());
+                continueButton.onClick.AddListener(() =>
+                {
+                    PlayButtonClickSound();
+                    OnContinueClicked?.Invoke();
+                });
             }
         }
 
@@ -388,6 +404,17 @@ namespace TimeLessLove.Managers
         public void EnableHUDPanel()
         {
             hudPanel.SetActive(true);
+        }
+
+        /// <summary>
+        /// Plays button click sound effect
+        /// </summary>
+        private void PlayButtonClickSound()
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayButtonClick();
+            }
         }
     }
 }

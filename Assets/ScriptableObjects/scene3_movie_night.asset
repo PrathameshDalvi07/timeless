@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: scene3_movie_night
   m_EditorClassIdentifier: 
   sceneName: scene3_movie_night
-  displayName: "Movie Night \u2013 Shared Laughter"
+  displayName: Movie Night
   backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:

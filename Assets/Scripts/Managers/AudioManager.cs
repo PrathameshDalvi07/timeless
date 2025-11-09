@@ -38,14 +38,26 @@ namespace TimeLessLove.Managers
         [Header("Fade Settings")]
         [SerializeField] private float musicFadeDuration = 1f;
 
+        [Header("Looping Background Music")]
+        [SerializeField] private AudioClip loopIntro;
+        [SerializeField] private AudioClip loopInGame;
+        [SerializeField] private AudioClip loopQuestionsScreen;
+
         [Header("Sound Effects")]
         [SerializeField] private AudioClip buttonClickSFX;
         [SerializeField] private AudioClip correctAnswerSFX;
         [SerializeField] private AudioClip wrongAnswerSFX;
-        [SerializeField] private AudioClip affectionUpSFX;
-        [SerializeField] private AudioClip affectionDownSFX;
 
         private Coroutine musicFadeCoroutine;
+        private MusicState currentMusicState = MusicState.None;
+
+        public enum MusicState
+        {
+            None,
+            Intro,
+            InGame,
+            Questions
+        }
 
         private void Awake()
         {
@@ -239,28 +251,6 @@ namespace TimeLessLove.Managers
         }
 
         /// <summary>
-        /// Plays affection increase sound
-        /// </summary>
-        public void PlayAffectionUp()
-        {
-            if (affectionUpSFX != null)
-            {
-                PlaySFX(affectionUpSFX);
-            }
-        }
-
-        /// <summary>
-        /// Plays affection decrease sound
-        /// </summary>
-        public void PlayAffectionDown()
-        {
-            if (affectionDownSFX != null)
-            {
-                PlaySFX(affectionDownSFX);
-            }
-        }
-
-        /// <summary>
         /// Sets music volume
         /// </summary>
         public void SetMusicVolume(float volume)
@@ -320,6 +310,75 @@ namespace TimeLessLove.Managers
         public void ResumeMusic()
         {
             musicSource.UnPause();
+        }
+
+        // ========== Looping Music Methods ==========
+
+        /// <summary>
+        /// Plays the intro loop music
+        /// </summary>
+        public void PlayIntroMusic(bool fade = true)
+        {
+            if (loopIntro != null)
+            {
+                currentMusicState = MusicState.Intro;
+                PlayMusic(loopIntro, fade);
+                Debug.Log("<color=cyan>Playing Intro Music Loop</color>");
+            }
+            else
+            {
+                Debug.LogWarning("AudioManager: Loop_Intro not assigned!");
+            }
+        }
+
+        /// <summary>
+        /// Plays the in-game loop music (dialogue/gameplay)
+        /// </summary>
+        public void PlayInGameMusic(bool fade = true)
+        {
+            if (loopInGame != null)
+            {
+                currentMusicState = MusicState.InGame;
+                PlayMusic(loopInGame, fade);
+                Debug.Log("<color=cyan>Playing In-Game Music Loop</color>");
+            }
+            else
+            {
+                Debug.LogWarning("AudioManager: Loop_In_Game not assigned!");
+            }
+        }
+
+        /// <summary>
+        /// Plays the questions screen loop music
+        /// </summary>
+        public void PlayQuestionsMusic(bool fade = true)
+        {
+            if (loopQuestionsScreen != null)
+            {
+                currentMusicState = MusicState.Questions;
+                PlayMusic(loopQuestionsScreen, fade);
+                Debug.Log("<color=cyan>Playing Questions Music Loop</color>");
+            }
+            else
+            {
+                Debug.LogWarning("AudioManager: Loop_Questions_Screen not assigned!");
+            }
+        }
+
+        /// <summary>
+        /// Gets the current music state
+        /// </summary>
+        public MusicState GetCurrentMusicState()
+        {
+            return currentMusicState;
+        }
+
+        /// <summary>
+        /// Checks if a specific music state is currently playing
+        /// </summary>
+        public bool IsPlayingMusicState(MusicState state)
+        {
+            return currentMusicState == state && musicSource.isPlaying;
         }
     }
 }

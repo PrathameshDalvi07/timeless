@@ -45,6 +45,12 @@ namespace TimeLessLove.Managers
                 return;
             }
 
+            // Play intro music
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayIntroMusic(fade: false);
+            }
+
             // Clear the text field initially
             introTextField.text = "";
 

@@ -167,11 +167,10 @@ namespace TimeLessLove.Managers
             uiManager.UpdateDayCounter(QuestBankManager.Instance.CurrentDay);
             uiManager.UpdateAffectionDisplay(affectionSystem.CurrentAffection, affectionSystem.MaxAffection);
 
-            // Play background music if AudioManager exists
-            AudioManager audioManager = FindObjectOfType<AudioManager>();
-            if (audioManager != null && currentSceneData.backgroundMusic != null)
+            // Play in-game music loop
+            if (AudioManager.Instance != null)
             {
-                audioManager.PlayMusic(currentSceneData.backgroundMusic);
+                AudioManager.Instance.PlayInGameMusic(fade: true);
             }
 
             Debug.Log($"<color=cyan>Scene setup: {currentSceneData.sceneName}</color>");
@@ -256,6 +255,12 @@ namespace TimeLessLove.Managers
             currentQuestionIndex = 0;
             correctAnswersCount = 0;
 
+            // Switch to questions music
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayQuestionsMusic(fade: true);
+            }
+
             // Get questions from current scene
             currentQuestions = currentSceneData.questions;
 
@@ -304,6 +309,19 @@ namespace TimeLessLove.Managers
             QuestionData currentQuestion = currentQuestions[currentQuestionIndex];
 
             bool isCorrect = currentQuestion.IsCorrect(selectedIndex);
+
+            // Play sound effect based on answer
+            if (AudioManager.Instance != null)
+            {
+                if (isCorrect)
+                {
+                    AudioManager.Instance.PlayCorrectAnswer();
+                }
+                else
+                {
+                    AudioManager.Instance.PlayWrongAnswer();
+                }
+            }
 
             // Update affection
             int affectionChange;
@@ -378,6 +396,12 @@ namespace TimeLessLove.Managers
             {
                 // Game Over handled by OnGameOver event
                 yield break;
+            }
+
+            // Switch back to in-game music for next scene
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayInGameMusic(fade: true);
             }
 
             // Load next random scene
