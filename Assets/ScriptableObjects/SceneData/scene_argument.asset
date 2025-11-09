@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: scene_argument
   m_EditorClassIdentifier: 
   sceneName: scene_argument
-  displayName: "Argument \u2013 The Quiet Storm"
-  backgroundSprite: {fileID: 0}
+  displayName: Argument
+  backgroundSprite: {fileID: 21300000, guid: 88119efe64b6543129a8ce8c53c18f76, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
   - "You know what\u2019s funny? You always go quiet when things get serious."

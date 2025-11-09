@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: scene_movie
   m_EditorClassIdentifier: 
   sceneName: scene_movie
-  displayName: "Movie \u2013 Popcorn Disaster Night"
-  backgroundSprite: {fileID: 0}
+  displayName: Movie
+  backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
   - "Okay, first of all \u2014 who puts salt and sugar on popcorn?"
