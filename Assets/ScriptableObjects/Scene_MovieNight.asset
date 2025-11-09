@@ -77,41 +77,5 @@ MonoBehaviour:
     correctAnswerIndex: 2
     correctResponse: It still makes my heart ache.
     wrongResponse: "No, it\u2019s always the ending."
-  - questionText: ---
-    choices:
-    - Scaries Moveis
-    - Fun Movies
-    - Documentry
-    - Suspense Movies
-    correctAnswerIndex: 0
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
-  - questionText: ---
-    choices:
-    - Scaries Moveis
-    - Fun Movies
-    - Documentry
-    - Suspense Movies
-    correctAnswerIndex: 0
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
-  - questionText: ---
-    choices:
-    - Scaries Moveis
-    - Fun Movies
-    - Documentry
-    - Suspense Movies
-    correctAnswerIndex: 0
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
-  - questionText: ---
-    choices:
-    - Scaries Moveis
-    - Fun Movies
-    - Documentry
-    - Suspense Movies
-    correctAnswerIndex: 0
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
   perfectAffectionBonus: 10
   wrongAnswerPenalty: 10
