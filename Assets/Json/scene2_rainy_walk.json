@@ -1,0 +1,172 @@
+{
+  "sceneName": "scene2_rainy_walk",
+  "displayName": "Rainy Walk – Shared Umbrella",
+  "backgroundSprite": "backgrounds/rain_street_evening.png",
+  "backgroundMusic": "audio/music/soft_rain_piano.mp3",
+  "dialogueLines": [
+    "The rain started softly that evening — cold but peaceful.",
+    "You handed me your jacket, even though you were shivering yourself.",
+    "We shared that tiny black umbrella and kept walking close together.",
+    "The air smelled like wet earth and freshly baked bread from the nearby bakery.",
+    "I hummed that song from my favorite band while the raindrops fell.",
+    "The sky was dark gray, with just a hint of orange light at the edge.",
+    "We passed by the little bakery, and I said the smell was perfect for the rain.",
+    "Our shoes got soaked, and you laughed when I stepped in a puddle.",
+    "I said the puddles sparkle like tiny mirrors — you just smiled.",
+    "You said the rain feels peaceful, and I agreed.",
+    "We stopped at the bridge for a moment, watching the street lights reflect on water.",
+    "You said my smile looked warm, even in the cold.",
+    "When the rain stopped, I whispered, ‘It’s beautiful now.’",
+    "The air smelled clean, and everything was quiet except for our footsteps.",
+    "I told you I’d never forget that walk — the sound of rain, your jacket, everything.",
+    "The soft piano from the nearby shop played faintly in the background.",
+    "I looked at you, drenched and happy, and said this moment feels timeless.",
+    "The world felt slow, like even time didn’t want to move on.",
+    "I said, ‘Don’t forget this walk,’ and you nodded.",
+    "We walked home quietly, carrying the sound of the rain in our hearts."
+  ],
+  "questions": [
+    {
+      "questionText": "What color was the umbrella we shared?",
+      "choices": ["Red", "Black", "Yellow", "Blue"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! That tiny black umbrella that barely fit both of us.",
+      "wrongResponse": "No… it wasn’t red. It was black."
+    },
+    {
+      "questionText": "What did you give me during the rain?",
+      "choices": ["Your scarf", "Your jacket", "Your hat", "Your gloves"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Exactly! You gave me your jacket — it smelled like coffee and rain.",
+      "wrongResponse": "No… it wasn’t your scarf, it was your jacket."
+    },
+    {
+      "questionText": "What did I say about the rain?",
+      "choices": ["It’s peaceful", "I hate it", "It’s loud", "It’s messy"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Right! I said it’s peaceful — remember?",
+      "wrongResponse": "No… I never said I hated it."
+    },
+    {
+      "questionText": "What did I hum while walking?",
+      "choices": ["A lullaby", "A song from my favorite band", "A movie tune", "Nothing"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! That song from my favorite band — I still hum it sometimes.",
+      "wrongResponse": "No… it wasn’t random. It was my favorite band’s song."
+    },
+    {
+      "questionText": "What color was the sky?",
+      "choices": ["Blue", "Dark gray", "Orange", "Black"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Exactly! Dark gray with a touch of orange on the horizon.",
+      "wrongResponse": "No… it wasn’t blue. It was dark gray."
+    },
+    {
+      "questionText": "Where did we stop for a moment?",
+      "choices": ["At the park", "On the bridge", "Under a tree", "Near a shop"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! On the bridge — watching the water shimmer.",
+      "wrongResponse": "No… not the park. It was the bridge."
+    },
+    {
+      "questionText": "What place did we pass by?",
+      "choices": ["A bakery", "A bookstore", "A park", "A flower shop"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Right! The bakery — the smell of bread mixed with the rain.",
+      "wrongResponse": "No… not the park. It was the bakery."
+    },
+    {
+      "questionText": "What did I say about puddles?",
+      "choices": ["They sparkle like mirrors", "They’re annoying", "They’re dirty", "They’re deep"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! I said puddles sparkle like tiny mirrors.",
+      "wrongResponse": "No… I never complained about them."
+    },
+    {
+      "questionText": "What happened to our shoes?",
+      "choices": ["They got soaked", "They stayed dry", "We took them off", "They broke"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! They were soaked, and we laughed about it.",
+      "wrongResponse": "No… they were soaked, remember?"
+    },
+    {
+      "questionText": "What did I say about your smile?",
+      "choices": ["It’s shy", "It’s warm", "It’s fading", "It’s fake"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right! I said your smile was warm — even in the cold.",
+      "wrongResponse": "No… not shy, warm."
+    },
+    {
+      "questionText": "What sound filled the evening?",
+      "choices": ["Rain", "Cars", "Voices", "Wind"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Only rain — soft, rhythmic, endless.",
+      "wrongResponse": "No… no cars or voices, just rain."
+    },
+    {
+      "questionText": "What did I say when the rain stopped?",
+      "choices": ["It’s beautiful now", "Let’s go home", "I’m cold", "It’s over"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! I said it’s beautiful now — the calm after rain.",
+      "wrongResponse": "No… I said it’s beautiful now."
+    },
+    {
+      "questionText": "What did the air smell like?",
+      "choices": ["Wet earth", "Flowers", "Smoke", "Coffee"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Wet earth — my favorite scent after rain.",
+      "wrongResponse": "No… not flowers. It smelled like earth."
+    },
+    {
+      "questionText": "What did I promise to remember?",
+      "choices": ["This walk", "Your jacket", "The rain", "The bakery"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! I said I’d never forget this walk.",
+      "wrongResponse": "No… I promised to remember the walk, not the bakery."
+    },
+    {
+      "questionText": "What music played faintly nearby?",
+      "choices": ["Soft piano", "Pop song", "Violin", "Jazz"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Right! That soft piano from the shop nearby.",
+      "wrongResponse": "No… not pop. It was piano."
+    },
+    {
+      "questionText": "What did I call the moment?",
+      "choices": ["Peaceful", "Timeless", "Short", "Strange"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! I said this moment feels timeless.",
+      "wrongResponse": "No… I didn’t say peaceful, I said timeless."
+    },
+    {
+      "questionText": "What did you say about the rain?",
+      "choices": ["It’s peaceful", "It’s endless", "It’s annoying", "It’s cold"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! You said it feels peaceful too.",
+      "wrongResponse": "No… you never complained."
+    },
+    {
+      "questionText": "What emotion did I show most during the walk?",
+      "choices": ["Calm", "Anger", "Fear", "Sadness"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Calm — I felt at peace with you.",
+      "wrongResponse": "No… I wasn’t angry. I was calm."
+    },
+    {
+      "questionText": "What did I ask you at the end?",
+      "choices": ["Don’t forget this walk", "Buy me cocoa", "Call me tomorrow", "Sing again"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! I said don’t forget this walk.",
+      "wrongResponse": "No… I didn’t say call me, I said don’t forget."
+    },
+    {
+      "questionText": "What did the moment feel like to me?",
+      "choices": ["Timeless", "Quick", "Cold", "Confusing"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes… timeless — that’s what love feels like, doesn’t it?",
+      "wrongResponse": "No… it wasn’t quick. It felt timeless."
+    }
+  ],
+  "perfectAffectionBonus": 10,
+  "wrongAnswerPenalty": 5
+}

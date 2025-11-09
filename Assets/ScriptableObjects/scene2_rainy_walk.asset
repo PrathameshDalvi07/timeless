@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene2_rainy_walk
+  m_EditorClassIdentifier: 
+  sceneName: scene2_rainy_walk
+  displayName: "Rainy Walk \u2013 Shared Umbrella"
+  backgroundSprite: {fileID: 21300000, guid: 512875972fd4146f8bfda92fa83ee5b0, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "The rain started softly that evening \u2014 cold but peaceful."
+  - You handed me your jacket, even though you were shivering yourself.
+  - We shared that tiny black umbrella and kept walking close together.
+  - The air smelled like wet earth and freshly baked bread from the nearby bakery.
+  - I hummed that song from my favorite band while the raindrops fell.
+  - The sky was dark gray, with just a hint of orange light at the edge.
+  - We passed by the little bakery, and I said the smell was perfect for the rain.
+  - Our shoes got soaked, and you laughed when I stepped in a puddle.
+  - "I said the puddles sparkle like tiny mirrors \u2014 you just smiled."
+  - You said the rain feels peaceful, and I agreed.
+  - We stopped at the bridge for a moment, watching the street lights reflect on
+    water.
+  - You said my smile looked warm, even in the cold.
+  - "When the rain stopped, I whispered, \u2018It\u2019s beautiful now.\u2019"
+  - The air smelled clean, and everything was quiet except for our footsteps.
+  - "I told you I\u2019d never forget that walk \u2014 the sound of rain, your jacket,
+    everything."
+  - The soft piano from the nearby shop played faintly in the background.
+  - I looked at you, drenched and happy, and said this moment feels timeless.
+  - "The world felt slow, like even time didn\u2019t want to move on."
+  - "I said, \u2018Don\u2019t forget this walk,\u2019 and you nodded."
+  - We walked home quietly, carrying the sound of the rain in our hearts.
+  questions:
+  - questionText: What color was the umbrella we shared?
+    choices:
+    - Red
+    - Black
+    - Yellow
+    - Blue
+    correctAnswerIndex: 1
+    correctResponse: Yes! That tiny black umbrella that barely fit both of us.
+    wrongResponse: "No\u2026 it wasn\u2019t red. It was black."
+  - questionText: What did you give me during the rain?
+    choices:
+    - Your scarf
+    - Your jacket
+    - Your hat
+    - Your gloves
+    correctAnswerIndex: 1
+    correctResponse: "Exactly! You gave me your jacket \u2014 it smelled like coffee
+      and rain."
+    wrongResponse: "No\u2026 it wasn\u2019t your scarf, it was your jacket."
+  - questionText: What did I say about the rain?
+    choices:
+    - "It\u2019s peaceful"
+    - I hate it
+    - "It\u2019s loud"
+    - "It\u2019s messy"
+    correctAnswerIndex: 0
+    correctResponse: "Right! I said it\u2019s peaceful \u2014 remember?"
+    wrongResponse: "No\u2026 I never said I hated it."
+  - questionText: What did I hum while walking?
+    choices:
+    - A lullaby
+    - A song from my favorite band
+    - A movie tune
+    - Nothing
+    correctAnswerIndex: 1
+    correctResponse: "Yes! That song from my favorite band \u2014 I still hum it
+      sometimes."
+    wrongResponse: "No\u2026 it wasn\u2019t random. It was my favorite band\u2019s
+      song."
+  - questionText: What color was the sky?
+    choices:
+    - Blue
+    - Dark gray
+    - Orange
+    - Black
+    correctAnswerIndex: 1
+    correctResponse: Exactly! Dark gray with a touch of orange on the horizon.
+    wrongResponse: "No\u2026 it wasn\u2019t blue. It was dark gray."
+  - questionText: Where did we stop for a moment?
+    choices:
+    - At the park
+    - On the bridge
+    - Under a tree
+    - Near a shop
+    correctAnswerIndex: 1
+    correctResponse: "Yes! On the bridge \u2014 watching the water shimmer."
+    wrongResponse: "No\u2026 not the park. It was the bridge."
+  - questionText: What place did we pass by?
+    choices:
+    - A bakery
+    - A bookstore
+    - A park
+    - A flower shop
+    correctAnswerIndex: 0
+    correctResponse: "Right! The bakery \u2014 the smell of bread mixed with the
+      rain."
+    wrongResponse: "No\u2026 not the park. It was the bakery."
+  - questionText: What did I say about puddles?
+    choices:
+    - They sparkle like mirrors
+    - "They\u2019re annoying"
+    - "They\u2019re dirty"
+    - "They\u2019re deep"
+    correctAnswerIndex: 0
+    correctResponse: Yes! I said puddles sparkle like tiny mirrors.
+    wrongResponse: "No\u2026 I never complained about them."
+  - questionText: What happened to our shoes?
+    choices:
+    - They got soaked
+    - They stayed dry
+    - We took them off
+    - They broke
+    correctAnswerIndex: 0
+    correctResponse: Exactly! They were soaked, and we laughed about it.
+    wrongResponse: "No\u2026 they were soaked, remember?"
+  - questionText: What did I say about your smile?
+    choices:
+    - "It\u2019s shy"
+    - "It\u2019s warm"
+    - "It\u2019s fading"
+    - "It\u2019s fake"
+    correctAnswerIndex: 1
+    correctResponse: "Right! I said your smile was warm \u2014 even in the cold."
+    wrongResponse: "No\u2026 not shy, warm."
+  - questionText: What sound filled the evening?
+    choices:
+    - Rain
+    - Cars
+    - Voices
+    - Wind
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Only rain \u2014 soft, rhythmic, endless."
+    wrongResponse: "No\u2026 no cars or voices, just rain."
+  - questionText: What did I say when the rain stopped?
+    choices:
+    - "It\u2019s beautiful now"
+    - "Let\u2019s go home"
+    - "I\u2019m cold"
+    - "It\u2019s over"
+    correctAnswerIndex: 0
+    correctResponse: "Exactly! I said it\u2019s beautiful now \u2014 the calm after
+      rain."
+    wrongResponse: "No\u2026 I said it\u2019s beautiful now."
+  - questionText: What did the air smell like?
+    choices:
+    - Wet earth
+    - Flowers
+    - Smoke
+    - Coffee
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Wet earth \u2014 my favorite scent after rain."
+    wrongResponse: "No\u2026 not flowers. It smelled like earth."
+  - questionText: What did I promise to remember?
+    choices:
+    - This walk
+    - Your jacket
+    - The rain
+    - The bakery
+    correctAnswerIndex: 0
+    correctResponse: "Yes! I said I\u2019d never forget this walk."
+    wrongResponse: "No\u2026 I promised to remember the walk, not the bakery."
+  - questionText: What music played faintly nearby?
+    choices:
+    - Soft piano
+    - Pop song
+    - Violin
+    - Jazz
+    correctAnswerIndex: 0
+    correctResponse: Right! That soft piano from the shop nearby.
+    wrongResponse: "No\u2026 not pop. It was piano."
+  - questionText: What did I call the moment?
+    choices:
+    - Peaceful
+    - Timeless
+    - Short
+    - Strange
+    correctAnswerIndex: 1
+    correctResponse: Yes! I said this moment feels timeless.
+    wrongResponse: "No\u2026 I didn\u2019t say peaceful, I said timeless."
+  - questionText: What did you say about the rain?
+    choices:
+    - "It\u2019s peaceful"
+    - "It\u2019s endless"
+    - "It\u2019s annoying"
+    - "It\u2019s cold"
+    correctAnswerIndex: 0
+    correctResponse: Exactly! You said it feels peaceful too.
+    wrongResponse: "No\u2026 you never complained."
+  - questionText: What emotion did I show most during the walk?
+    choices:
+    - Calm
+    - Anger
+    - Fear
+    - Sadness
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Calm \u2014 I felt at peace with you."
+    wrongResponse: "No\u2026 I wasn\u2019t angry. I was calm."
+  - questionText: What did I ask you at the end?
+    choices:
+    - "Don\u2019t forget this walk"
+    - Buy me cocoa
+    - Call me tomorrow
+    - Sing again
+    correctAnswerIndex: 0
+    correctResponse: "Exactly! I said don\u2019t forget this walk."
+    wrongResponse: "No\u2026 I didn\u2019t say call me, I said don\u2019t forget."
+  - questionText: What did the moment feel like to me?
+    choices:
+    - Timeless
+    - Quick
+    - Cold
+    - Confusing
+    correctAnswerIndex: 0
+    correctResponse: "Yes\u2026 timeless \u2014 that\u2019s what love feels like,
+      doesn\u2019t it?"
+    wrongResponse: "No\u2026 it wasn\u2019t quick. It felt timeless."
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5

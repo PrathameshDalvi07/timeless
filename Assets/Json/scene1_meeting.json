@@ -1,0 +1,162 @@
+{
+  "sceneName": "scene1_meeting",
+  "displayName": "The Meeting – Café Memories",
+  "backgroundSprite": "backgrounds/cafe_sunset.png",
+  "backgroundMusic": "audio/music/romantic_cafe_theme.mp3",
+  "dialogueLines": [
+    "It was a calm evening at the café with blue walls and the smell of cinnamon in the air.",
+    "I ordered my favorite hot chocolate again, the one that’s extra sweet.",
+    "You smiled and said coffee is always your comfort drink.",
+    "The piano was playing softly in the corner, just like always.",
+    "We sat near the window seat, the one that catches the evening sunset.",
+    "I wore my peach shirt — you noticed and said it suits me.",
+    "You looked at the wooden table and said it feels cozy here.",
+    "I talked about cinnamon muffins again, you laughed that I never change.",
+    "I said, next coffee’s on me — you just smiled.",
+    "Before leaving, I said see you soon, and you promised to remember this day."
+  ],
+  "questions": [
+    {
+      "questionText": "What drink did I order that day?",
+      "choices": ["Coffee", "Hot Chocolate", "Tea", "Juice"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! My favorite hot chocolate — sweet and warm.",
+      "wrongResponse": "No… not coffee. It was hot chocolate."
+    },
+    {
+      "questionText": "What did you order?",
+      "choices": ["Tea", "Juice", "Coffee", "Milkshake"],
+      "correctAnswerIndex": 2,
+      "correctResponse": "Exactly! Coffee — your usual comfort.",
+      "wrongResponse": "No… not tea, you always choose coffee."
+    },
+    {
+      "questionText": "What color were the café walls?",
+      "choices": ["Red", "Blue", "White", "Green"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! Blue — calm and peaceful.",
+      "wrongResponse": "No… they were blue, remember?"
+    },
+    {
+      "questionText": "What scent filled the café?",
+      "choices": ["Vanilla", "Cinnamon", "Chocolate", "Bread"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right! The smell of cinnamon — my favorite.",
+      "wrongResponse": "No… it wasn’t vanilla, it was cinnamon."
+    },
+    {
+      "questionText": "Where did we sit?",
+      "choices": ["Near the counter", "By the window", "Outside", "In the corner"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Yes! By the window, watching the sunset.",
+      "wrongResponse": "No… we sat near the window."
+    },
+    {
+      "questionText": "What was playing in the background?",
+      "choices": ["Jazz", "Piano", "Pop", "Nothing"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Exactly. Soft piano — like the café’s heartbeat.",
+      "wrongResponse": "No… not jazz, it was piano."
+    },
+    {
+      "questionText": "What time of day was it?",
+      "choices": ["Morning", "Afternoon", "Evening", "Night"],
+      "correctAnswerIndex": 2,
+      "correctResponse": "Yes! Evening — the light was warm and golden.",
+      "wrongResponse": "No… not morning. It was evening."
+    },
+    {
+      "questionText": "What color was my shirt?",
+      "choices": ["Blue", "Peach", "Gray", "White"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right! Peach — you said it suits me.",
+      "wrongResponse": "No… not blue, it was peach."
+    },
+    {
+      "questionText": "What pastry did I mention?",
+      "choices": ["Donut", "Croissant", "Muffin", "Cake"],
+      "correctAnswerIndex": 2,
+      "correctResponse": "Exactly! Cinnamon muffins, always.",
+      "wrongResponse": "No… I never talked about donuts."
+    },
+    {
+      "questionText": "What did I promise before leaving?",
+      "choices": ["Next coffee’s on me", "Call tomorrow", "Let’s meet again", "Take care"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! I said next coffee’s on me.",
+      "wrongResponse": "No… I didn’t say call me. I said I’d pay next time."
+    },
+    {
+      "questionText": "What did I say before leaving?",
+      "choices": ["Bye", "See you soon", "Goodnight", "Take care"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Exactly! I said see you soon.",
+      "wrongResponse": "No… not bye. I said see you soon."
+    },
+    {
+      "questionText": "What did you say about the table?",
+      "choices": ["It feels cozy", "Too small", "Too noisy", "Cold"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! You said it feels cozy here.",
+      "wrongResponse": "No… you said cozy, not cold."
+    },
+    {
+      "questionText": "What did I wear that day?",
+      "choices": ["Peach shirt", "Blue jacket", "White dress", "Gray hoodie"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! My peach shirt — you remembered.",
+      "wrongResponse": "No… I didn’t wear a jacket."
+    },
+    {
+      "questionText": "What was our dessert that day?",
+      "choices": ["Muffin", "Cake", "Cookies", "Nothing"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! Muffins — again.",
+      "wrongResponse": "No… we didn’t have cake."
+    },
+    {
+      "questionText": "What kind of conversation did I mention?",
+      "choices": ["Forgettable", "Hard to forget", "Boring", "Loud"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right! I said good conversations are hard to forget.",
+      "wrongResponse": "No… not boring ones."
+    },
+    {
+      "questionText": "What emotion did I show most that day?",
+      "choices": ["Joy", "Anger", "Sadness", "Nervousness"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Joy — I couldn’t stop smiling.",
+      "wrongResponse": "No… I wasn’t sad at all."
+    },
+    {
+      "questionText": "What sound did we hear first?",
+      "choices": ["Doorbell", "Cup clink", "Music", "Footsteps"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Exactly! The clink of cups — classic café start.",
+      "wrongResponse": "No… not the bell, the cups."
+    },
+    {
+      "questionText": "What did I call the café atmosphere?",
+      "choices": ["Peaceful", "Crowded", "Loud", "Cold"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Peaceful — my favorite word for it.",
+      "wrongResponse": "No… I said peaceful, not loud."
+    },
+    {
+      "questionText": "What kind of walls did the café have?",
+      "choices": ["Blue", "Brown", "Red", "White"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Yes! Blue — calming like the sea.",
+      "wrongResponse": "No… not brown."
+    },
+    {
+      "questionText": "What promise did you make that day?",
+      "choices": ["To remember this day", "To call me", "To buy next time", "To write to me"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! You promised to remember this day.",
+      "wrongResponse": "No… you didn’t promise to call, you promised to remember."
+    }
+  ],
+  "perfectAffectionBonus": 10,
+  "wrongAnswerPenalty": 5
+}

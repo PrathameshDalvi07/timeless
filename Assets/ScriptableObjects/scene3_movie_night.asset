@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene3_movie_night
+  m_EditorClassIdentifier: 
+  sceneName: scene3_movie_night
+  displayName: "Movie Night \u2013 Shared Laughter"
+  backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - That night was quiet and warm, just the two of us on the beige couch.
+  - "You brought a blanket \u2014 the soft cream one you love so much."
+  - I picked the movie, of course. You always let me choose.
+  - "It was a romance film \u2014 the one that always makes me cry at the end."
+  - You teased me when I wiped a tear and said, 'Here we go again.'
+  - I made popcorn, maybe a little burnt, but you said it was perfect anyway.
+  - "You laughed before the jokes even landed \u2014 I loved that about you."
+  - The only light came from the screen; everything else felt far away.
+  - I wore my cozy gray sweater; you said I looked comfortable enough to sleep.
+  - "We drank warm tea that night \u2014 no coffee, no soda, just tea."
+  - "You told me you love romance movies even though you pretend you don\u2019t."
+  - I said sad endings feel more real than happy ones.
+  - "The clock ticked slowly \u2014 it felt like time stopped for us."
+  - After the movie, you turned to me and said, 'That was perfect.'
+  - "I smiled and said, 'Every movie\u2019s perfect when I\u2019m with you.'"
+  - "Then I whispered, 'Don\u2019t forget this night.'"
+  - The soft piano from the end credits filled the room.
+  - "You stretched your arms and said you\u2019d make better popcorn next time."
+  - "We sat in silence for a while, but it wasn\u2019t awkward \u2014 it was peaceful."
+  - Even now, I can still hear the sound of the rain outside that night.
+  questions:
+  - questionText: What kind of movie did we watch?
+    choices:
+    - Romance
+    - Horror
+    - Comedy
+    - Action
+    correctAnswerIndex: 0
+    correctResponse: "Yes! A romance \u2014 my favorite kind of story."
+    wrongResponse: "No\u2026 not horror. It was a love story, remember?"
+  - questionText: Who chose the movie?
+    choices:
+    - You
+    - Me
+    - Both
+    - Randomly
+    correctAnswerIndex: 1
+    correctResponse: "Exactly! I chose the movie \u2014 you always let me pick."
+    wrongResponse: "No\u2026 you didn\u2019t pick it, I did."
+  - questionText: What color was the blanket we used?
+    choices:
+    - Gray
+    - Cream
+    - Blue
+    - White
+    correctAnswerIndex: 1
+    correctResponse: Right! That soft cream blanket we always used.
+    wrongResponse: "No\u2026 it wasn\u2019t gray, it was cream."
+  - questionText: What was the color of the couch?
+    choices:
+    - Gray
+    - Beige
+    - Brown
+    - Black
+    correctAnswerIndex: 1
+    correctResponse: "Yes! The beige couch \u2014 warm and comfortable."
+    wrongResponse: "No\u2026 not black, it was beige."
+  - questionText: What snack did I make?
+    choices:
+    - Cookies
+    - Chips
+    - Popcorn
+    - Pizza
+    correctAnswerIndex: 2
+    correctResponse: "Exactly! Popcorn \u2014 burnt, but still good."
+    wrongResponse: "No\u2026 it wasn\u2019t cookies, it was popcorn."
+  - questionText: What drink did we have that night?
+    choices:
+    - Tea
+    - Coffee
+    - Juice
+    - Water
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Just tea \u2014 no coffee that night."
+    wrongResponse: "No\u2026 not coffee. We had tea."
+  - questionText: What was the lighting like in the room?
+    choices:
+    - Bright
+    - Only the screen
+    - Candlelight
+    - Lamp on
+    correctAnswerIndex: 1
+    correctResponse: Right! Only the movie screen lit the room.
+    wrongResponse: "No\u2026 there wasn\u2019t any candlelight, only the screen."
+  - questionText: What color sweater was I wearing?
+    choices:
+    - Gray
+    - Red
+    - Blue
+    - White
+    correctAnswerIndex: 0
+    correctResponse: "Yes! That gray sweater I love \u2014 so cozy."
+    wrongResponse: "No\u2026 not blue, it was gray."
+  - questionText: What did I say about sad endings?
+    choices:
+    - They feel more real
+    - "They\u2019re boring"
+    - "They\u2019re fake"
+    - They ruin movies
+    correctAnswerIndex: 0
+    correctResponse: Exactly! I said they feel more real than happy ones.
+    wrongResponse: "No\u2026 I said they feel real, not boring."
+  - questionText: What did I say when you teased me for crying?
+    choices:
+    - I always cry
+    - "It\u2019s just dust"
+    - "It\u2019s nothing"
+    - I love emotional scenes
+    correctAnswerIndex: 0
+    correctResponse: "Yes! I said I always cry \u2014 it\u2019s who I am."
+    wrongResponse: "No\u2026 I didn\u2019t say nothing, I said I always cry."
+  - questionText: What was the background sound during the credits?
+    choices:
+    - Soft piano
+    - Wind
+    - Silence
+    - Thunder
+    correctAnswerIndex: 0
+    correctResponse: Exactly! The soft piano from the end credits.
+    wrongResponse: "No\u2026 not silence. The piano played softly."
+  - questionText: What did you say about the popcorn?
+    choices:
+    - "It\u2019s perfect"
+    - "It\u2019s burnt"
+    - "It\u2019s salty"
+    - "It\u2019s bland"
+    correctAnswerIndex: 0
+    correctResponse: Yes! You said it was perfect, even though it was burnt.
+    wrongResponse: "No\u2026 you didn\u2019t complain. You said it was perfect."
+  - questionText: What did you say after the movie ended?
+    choices:
+    - That was perfect
+    - That was long
+    - "I\u2019m sleepy"
+    - "Let\u2019s watch again"
+    correctAnswerIndex: 0
+    correctResponse: Exactly! You said that was perfect.
+    wrongResponse: "No\u2026 you didn\u2019t say you\u2019re sleepy, you said it
+      was perfect."
+  - questionText: What did I whisper at the end?
+    choices:
+    - "Don\u2019t forget this night"
+    - Goodnight
+    - I love you
+    - See you tomorrow
+    correctAnswerIndex: 0
+    correctResponse: "Yes! I said don\u2019t forget this night."
+    wrongResponse: "No\u2026 I didn\u2019t say goodnight. I said don\u2019t forget."
+  - questionText: What did I call every movie we watched together?
+    choices:
+    - Perfect
+    - Too long
+    - Funny
+    - Sad
+    correctAnswerIndex: 0
+    correctResponse: "Exactly! I said every movie\u2019s perfect when I\u2019m with
+      you."
+    wrongResponse: "No\u2026 I said perfect, not funny."
+  - questionText: What emotion filled the night?
+    choices:
+    - Joy
+    - Sadness
+    - Fear
+    - Anger
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Joy \u2014 that simple, peaceful happiness."
+    wrongResponse: "No\u2026 it wasn\u2019t sadness."
+  - questionText: What did you promise for next time?
+    choices:
+    - Make better popcorn
+    - Choose the movie
+    - Bring snacks
+    - Sleep early
+    correctAnswerIndex: 0
+    correctResponse: Right! You promised to make better popcorn next time.
+    wrongResponse: "No\u2026 you didn\u2019t promise snacks, just better popcorn."
+  - questionText: What sound was outside that night?
+    choices:
+    - Rain
+    - Wind
+    - Traffic
+    - Nothing
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Rain \u2014 it matched the piano perfectly."
+    wrongResponse: "No\u2026 it wasn\u2019t wind. It was rain."
+  - questionText: What did I say about you laughing early?
+    choices:
+    - I love that about you
+    - "You\u2019re impatient"
+    - "It\u2019s annoying"
+    - You should wait
+    correctAnswerIndex: 0
+    correctResponse: Exactly! I said I love that about you.
+    wrongResponse: "No\u2026 I didn\u2019t complain. I said I loved it."
+  - questionText: What did I call that night?
+    choices:
+    - Perfect
+    - Peaceful
+    - Funny
+    - Sad
+    correctAnswerIndex: 0
+    correctResponse: "Yes! Perfect \u2014 that night was everything I needed."
+    wrongResponse: "No\u2026 not sad. It was perfect."
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5
