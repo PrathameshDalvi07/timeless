@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene2_argument
+  m_EditorClassIdentifier: 
+  sceneName: scene2_argument
+  displayName: Argument
+  backgroundSprite: {fileID: 21300000, guid: 88119efe64b6543129a8ce8c53c18f76, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "I\u2019m upset because you forgot date night."
+  - "You really need to listen better \u2014 it wasn\u2019t a small thing."
+  - Your sarcasm made it worse when I just wanted you to care.
+  - "Let\u2019s talk it out later\u2026 after I get some space."
+  - "Next time, admit when you\u2019re wrong and just try better."
+  questions:
+  - questionText: Why is she upset?
+    choices:
+    - Bad weather
+    - You forgot date night
+    - TV broke
+    - Cat escaped
+    correctAnswerIndex: 1
+    correctResponse: Correct. You messed up date night.
+    wrongResponse: "Nope. Weather didn\u2019t ruin this \u2014 you did."
+  - questionText: What do you need to improve?
+    choices:
+    - Listening
+    - Dancing
+    - Cooking
+    - Running
+    correctAnswerIndex: 0
+    correctResponse: "Yes \u2014 listening skills unlocked!"
+    wrongResponse: "Wrong. This isn\u2019t dance school."
+  - questionText: What tone made things worse?
+    choices:
+    - Quiet
+    - Sarcastic
+    - Cute
+    - Serious
+    correctAnswerIndex: 1
+    correctResponse: "Right \u2014 sarcasm wasn\u2019t helping."
+    wrongResponse: Nope. The sass made it worse.
+  - questionText: What did she ask for before talking again?
+    choices:
+    - Space
+    - Apology
+    - Dinner
+    - Silence
+    correctAnswerIndex: 0
+    correctResponse: "Correct \u2014 she needed space first."
+    wrongResponse: "No\u2026 she said she needed space, not silence."
+  - questionText: What must you admit?
+    choices:
+    - "You\u2019re wrong"
+    - "She\u2019s wrong"
+    - "Nobody\u2019s wrong"
+    - The moon is wrong
+    correctAnswerIndex: 0
+    correctResponse: "Correct \u2014 accepting defeat builds character."
+    wrongResponse: "Nope. YOU are wrong. That\u2019s the rule."
+  - questionText: What does she want next time?
+    choices:
+    - Worse effort
+    - Better effort
+    - Same behavior
+    - Nothing
+    correctAnswerIndex: 1
+    correctResponse: "Correct \u2014 do better next time!"
+    wrongResponse: "Nope. She DEFINITELY didn\u2019t ask for worse."
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5

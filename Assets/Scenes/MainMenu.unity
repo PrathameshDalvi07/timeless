@@ -152,10 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allSceneData:
-  - {fileID: 11400000, guid: 38e11cf3674d34e4b875e5d157b4a222, type: 2}
-  - {fileID: 11400000, guid: 37e6a272ae2dc45fead4974e1e71d244, type: 2}
-  - {fileID: 11400000, guid: 67315ab87a58141699f7c7cd0f222f29, type: 2}
-  - {fileID: 11400000, guid: 5bd79b560396b4affab49676bececd72, type: 2}
+  - {fileID: 11400000, guid: d1f9ac0fd78e041d18d91efdebb9745e, type: 2}
   playedScenesToday: []
   currentDayNumber: 1
 --- !u!4 &38215916

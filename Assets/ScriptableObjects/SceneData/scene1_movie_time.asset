@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene1_movie_time
+  m_EditorClassIdentifier: 
+  sceneName: scene1_movie_time
+  displayName: Movie Time
+  backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "I brought popcorn and queued up a rom-com \u2014 no spoilers allowed."
+  - "The remote\u2019s in my hand, and yes, I\u2019m the director tonight."
+  - Sit next to me, dim the lights, and grab me a soda.
+  - "Don\u2019t even think about pausing \u2014 let the story flow."
+  - "Popcorn\u2019s perfect, soda\u2019s fizzing, and laughter\u2019s incoming."
+  - "This night\u2019s about comfort, not chaos \u2014 enjoy it with me."
+  questions:
+  - questionText: What snack did I bring?
+    choices:
+    - Chips
+    - Popcorn
+    - Candy
+    - Pizza
+    correctAnswerIndex: 1
+    correctResponse: "Correct \u2014 popcorn makes everything better!"
+    wrongResponse: Nope. No chips. Just glorious popcorn.
+  - questionText: Which genre are we watching?
+    choices:
+    - Horror
+    - Rom-com
+    - Action
+    - Sci-fi
+    correctAnswerIndex: 1
+    correctResponse: Yes! Love + comedy = perfect.
+    wrongResponse: Nope. No spooky monsters tonight.
+  - questionText: Where is the remote?
+    choices:
+    - Couch
+    - Her hand
+    - Kitchen
+    - Table
+    correctAnswerIndex: 1
+    correctResponse: "Right \u2014 she controls the universe."
+    wrongResponse: Wrong. Stop looking under the couch.
+  - questionText: Where are you supposed to sit?
+    choices:
+    - Floor
+    - Far away
+    - Next to her
+    - Outside
+    correctAnswerIndex: 2
+    correctResponse: "Correct \u2014 sit close (but not creepy close)."
+    wrongResponse: Incorrect. Why are you distancing like a weirdo?
+  - questionText: How should the lights be?
+    choices:
+    - Fully off
+    - Dim
+    - Bright
+    - Rainbow disco
+    correctAnswerIndex: 1
+    correctResponse: "Right \u2014 dim = perfect mood."
+    wrongResponse: Disco?? Calm down, rave-beast.
+  - questionText: What must you NOT do?
+    choices:
+    - Spoil the movie
+    - Laugh
+    - Blink
+    - Breathe
+    correctAnswerIndex: 0
+    correctResponse: "Correct \u2014 spoilers = instant breakup."
+    wrongResponse: Wrong. She said NO spoilers!
+  - questionText: What drink did she ask for?
+    choices:
+    - Coffee
+    - Milk
+    - Soda
+    - Water
+    correctAnswerIndex: 2
+    correctResponse: Yes! Soda delivery success.
+    wrongResponse: Wrong. Milk during a movie? Psychopath behavior.
+  - questionText: Why dim lights?
+    choices:
+    - Mood
+    - Bugs
+    - Fear
+    - Too bright
+    correctAnswerIndex: 0
+    correctResponse: "Correct \u2014 ambiance baby."
+    wrongResponse: Nope. Mood is everything.
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5

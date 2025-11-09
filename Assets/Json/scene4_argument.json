@@ -1,170 +1,57 @@
 {
-  "sceneName": "scene4_argument",
-  "displayName": "The Argument – Broken Words",
+  "sceneName": "scene2_argument",
+  "displayName": "Argument – Date Night Disagreement (Shortened)",
   "backgroundSprite": "backgrounds/apartment_evening.png",
-  "backgroundMusic": "audio/music/quiet_conflict_theme.mp3",
+  "backgroundMusic": "audio/music/tense_piano_loop.mp3",
   "dialogueLines": [
-    "It started with something small, didn’t it?",
-    "You forgot something important to me — a memory, not a thing.",
-    "I said you weren’t listening… and maybe you weren’t.",
-    "The cup on the table fell and shattered between us.",
-    "That old coffee cup from our first café date, remember?",
-    "I watched it roll off the wooden table, taking our words with it.",
-    "The white light in the room felt colder than ever.",
-    "I didn’t shout. My voice was calm but cold.",
-    "You said nothing… silence hurts more than anger sometimes.",
-    "I dropped the spoon too — it clinked softly against the floor.",
-    "Our trust cracked that night, not just the cup.",
-    "The coffee smell still lingered, mixed with the sound of breaking glass.",
-    "I looked down at the cup, not at you.",
-    "I whispered ‘why’ under my breath, but you didn’t hear it.",
-    "I almost said sorry… but the words froze.",
-    "You stood still. Didn’t move. Didn’t say a word.",
-    "Even the rain outside went quiet after that sound.",
-    "The last sound before silence was the cup breaking.",
-    "Maybe the real problem wasn’t words… maybe it was silence.",
-    "Do you still remember how it felt, when everything broke?"
+    "I’m upset because you forgot date night.",
+    "You really need to listen better — it wasn’t a small thing.",
+    "Your sarcasm made it worse when I just wanted you to care.",
+    "Let’s talk it out later… after I get some space.",
+    "Next time, admit when you’re wrong and just try better."
   ],
   "questions": [
     {
-      "questionText": "What caused the argument?",
-      "choices": ["Forgotten memory", "Broken promise", "Late arrival", "Message on phone"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… you forgot something that mattered to me.",
-      "wrongResponse": "No… it wasn’t a message. You forgot a memory."
-    },
-    {
-      "questionText": "What fell during the argument?",
-      "choices": ["Cup", "Phone", "Book", "Plate"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Right… that cup shattered between us.",
-      "wrongResponse": "No… it was the cup, not the phone."
-    },
-    {
-      "questionText": "What kind of cup was it?",
-      "choices": ["Our café cup", "A new cup", "Tea cup", "Plain mug"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly… the same café cup from our first date.",
-      "wrongResponse": "No… it was the café cup, not a new one."
-    },
-    {
-      "questionText": "What color was the room light?",
-      "choices": ["Warm yellow", "Cold white", "Blue", "Dim orange"],
+      "questionText": "Why is she upset?",
+      "choices": ["Bad weather", "You forgot date night", "TV broke", "Cat escaped"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Yes… cold white. It made the room feel empty.",
-      "wrongResponse": "No… it wasn’t warm. It was cold white."
+      "correctResponse": "Correct. You messed up date night.",
+      "wrongResponse": "Nope. Weather didn’t ruin this — you did."
     },
     {
-      "questionText": "What was my tone when I spoke?",
-      "choices": ["Cold", "Angry", "Loud", "Crying"],
+      "questionText": "What do you need to improve?",
+      "choices": ["Listening", "Dancing", "Cooking", "Running"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Right. I wasn’t yelling — I was cold.",
-      "wrongResponse": "No… not loud. I said it quietly."
+      "correctResponse": "Yes — listening skills unlocked!",
+      "wrongResponse": "Wrong. This isn’t dance school."
     },
     {
-      "questionText": "What did you say after the cup fell?",
-      "choices": ["Nothing", "Sorry", "Calm down", "It’s okay"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… you said nothing. That silence said everything.",
-      "wrongResponse": "No… you didn’t say sorry that night."
+      "questionText": "What tone made things worse?",
+      "choices": ["Quiet", "Sarcastic", "Cute", "Serious"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right — sarcasm wasn’t helping.",
+      "wrongResponse": "Nope. The sass made it worse."
     },
     {
-      "questionText": "What fell with the cup?",
-      "choices": ["Spoon", "Plate", "Photo frame", "Nothing"],
+      "questionText": "What did she ask for before talking again?",
+      "choices": ["Space", "Apology", "Dinner", "Silence"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Exactly… the spoon hit the floor after it.",
-      "wrongResponse": "No… it was the spoon, not a frame."
+      "correctResponse": "Correct — she needed space first.",
+      "wrongResponse": "No… she said she needed space, not silence."
     },
     {
-      "questionText": "What broke that night besides the cup?",
-      "choices": ["Trust", "Glass", "Lamp", "Clock"],
+      "questionText": "What must you admit?",
+      "choices": ["You’re wrong", "She’s wrong", "Nobody’s wrong", "The moon is wrong"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Yes… our trust cracked that night.",
-      "wrongResponse": "No… it wasn’t a lamp. It was trust."
+      "correctResponse": "Correct — accepting defeat builds character.",
+      "wrongResponse": "Nope. YOU are wrong. That’s the rule."
     },
     {
-      "questionText": "What smell filled the room?",
-      "choices": ["Coffee", "Dust", "Perfume", "Nothing"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Right… the smell of coffee — the same as that café.",
-      "wrongResponse": "No… it wasn’t dust. It was coffee."
-    },
-    {
-      "questionText": "What was the table made of?",
-      "choices": ["Wood", "Glass", "Marble", "Steel"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! The wooden table from the living room.",
-      "wrongResponse": "No… it wasn’t glass. It was wood."
-    },
-    {
-      "questionText": "What did I whisper before walking away?",
-      "choices": ["Why", "Sorry", "Goodbye", "I miss you"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly… I whispered 'why', but you didn’t hear me.",
-      "wrongResponse": "No… I didn’t say sorry. Just 'why'."
-    },
-    {
-      "questionText": "What emotion did I feel after silence?",
-      "choices": ["Hurt", "Relief", "Calm", "Joy"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… hurt. Silence hurts more than words.",
-      "wrongResponse": "No… I wasn’t calm. I was hurting."
-    },
-    {
-      "questionText": "What sound ended the moment?",
-      "choices": ["Cup breaking", "Door closing", "Rain outside", "Music"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Right… the shatter was the last sound before silence.",
-      "wrongResponse": "No… not the door. It was the cup."
-    },
-    {
-      "questionText": "What did the breaking sound mean to me?",
-      "choices": ["End", "Relief", "Peace", "Forgetfulness"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… it meant the end of something precious.",
-      "wrongResponse": "No… it wasn’t peace. It was an ending."
-    },
-    {
-      "questionText": "What did I almost say but couldn’t?",
-      "choices": ["Sorry", "I love you", "You’re right", "Goodbye"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… I almost said sorry, but the words froze.",
-      "wrongResponse": "No… I didn’t almost say goodbye."
-    },
-    {
-      "questionText": "What did I look at before leaving?",
-      "choices": ["Cup", "Window", "You", "Floor"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly… I stared at the broken cup, not you.",
-      "wrongResponse": "No… not the window. The cup."
-    },
-    {
-      "questionText": "What did you do as I turned away?",
-      "choices": ["Stayed silent", "Called my name", "Apologized", "Left first"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… you stayed silent. That silence said everything.",
-      "wrongResponse": "No… you didn’t call out. You stayed quiet."
-    },
-    {
-      "questionText": "What did the silence feel like?",
-      "choices": ["Heavy", "Peaceful", "Short", "Comforting"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… heavy. Too heavy to breathe.",
-      "wrongResponse": "No… it wasn’t peaceful. It was heavy."
-    },
-    {
-      "questionText": "What did the moment teach me?",
-      "choices": ["Silence hurts", "Love fades", "Time heals", "Words lie"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly. Silence hurts more than words ever could.",
-      "wrongResponse": "No… it wasn’t time heals. It was silence hurts."
-    },
-    {
-      "questionText": "What was the last thing you saw me do?",
-      "choices": ["Turn away", "Cry", "Smile", "Sit down"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes… I turned away without a word.",
-      "wrongResponse": "No… I didn’t cry. I just turned away."
+      "questionText": "What does she want next time?",
+      "choices": ["Worse effort", "Better effort", "Same behavior", "Nothing"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Correct — do better next time!",
+      "wrongResponse": "Nope. She DEFINITELY didn’t ask for worse."
     }
   ],
   "perfectAffectionBonus": 10,

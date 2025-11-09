@@ -1,170 +1,72 @@
 {
-  "sceneName": "scene3_movie_night",
-  "displayName": "Movie Night – Shared Laughter",
-  "backgroundSprite": "backgrounds/livingroom_night.png",
-  "backgroundMusic": "audio/music/soft_home_theme.mp3",
+  "sceneName": "scene1_movie_time",
+  "displayName": "Movie Time – Cozy Rom-Com Night",
+  "backgroundSprite": "backgrounds/livingroom_evening.png",
+  "backgroundMusic": "audio/music/cozy_movie_theme.mp3",
   "dialogueLines": [
-    "That night was quiet and warm, just the two of us on the beige couch.",
-    "You brought a blanket — the soft cream one you love so much.",
-    "I picked the movie, of course. You always let me choose.",
-    "It was a romance film — the one that always makes me cry at the end.",
-    "You teased me when I wiped a tear and said, 'Here we go again.'",
-    "I made popcorn, maybe a little burnt, but you said it was perfect anyway.",
-    "You laughed before the jokes even landed — I loved that about you.",
-    "The only light came from the screen; everything else felt far away.",
-    "I wore my cozy gray sweater; you said I looked comfortable enough to sleep.",
-    "We drank warm tea that night — no coffee, no soda, just tea.",
-    "You told me you love romance movies even though you pretend you don’t.",
-    "I said sad endings feel more real than happy ones.",
-    "The clock ticked slowly — it felt like time stopped for us.",
-    "After the movie, you turned to me and said, 'That was perfect.'",
-    "I smiled and said, 'Every movie’s perfect when I’m with you.'",
-    "Then I whispered, 'Don’t forget this night.'",
-    "The soft piano from the end credits filled the room.",
-    "You stretched your arms and said you’d make better popcorn next time.",
-    "We sat in silence for a while, but it wasn’t awkward — it was peaceful.",
-    "Even now, I can still hear the sound of the rain outside that night."
+    "I brought popcorn and queued up a rom-com — no spoilers allowed.",
+    "The remote’s in my hand, and yes, I’m the director tonight.",
+    "Sit next to me, dim the lights, and grab me a soda.",
+    "Don’t even think about pausing — let the story flow.",
+    "Popcorn’s perfect, soda’s fizzing, and laughter’s incoming.",
+    "This night’s about comfort, not chaos — enjoy it with me."
   ],
   "questions": [
     {
-      "questionText": "What kind of movie did we watch?",
-      "choices": ["Romance", "Horror", "Comedy", "Action"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! A romance — my favorite kind of story.",
-      "wrongResponse": "No… not horror. It was a love story, remember?"
-    },
-    {
-      "questionText": "Who chose the movie?",
-      "choices": ["You", "Me", "Both", "Randomly"],
+      "questionText": "What snack did I bring?",
+      "choices": ["Chips", "Popcorn", "Candy", "Pizza"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Exactly! I chose the movie — you always let me pick.",
-      "wrongResponse": "No… you didn’t pick it, I did."
+      "correctResponse": "Correct — popcorn makes everything better!",
+      "wrongResponse": "Nope. No chips. Just glorious popcorn."
     },
     {
-      "questionText": "What color was the blanket we used?",
-      "choices": ["Gray", "Cream", "Blue", "White"],
+      "questionText": "Which genre are we watching?",
+      "choices": ["Horror", "Rom-com", "Action", "Sci-fi"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Right! That soft cream blanket we always used.",
-      "wrongResponse": "No… it wasn’t gray, it was cream."
+      "correctResponse": "Yes! Love + comedy = perfect.",
+      "wrongResponse": "Nope. No spooky monsters tonight."
     },
     {
-      "questionText": "What was the color of the couch?",
-      "choices": ["Gray", "Beige", "Brown", "Black"],
+      "questionText": "Where is the remote?",
+      "choices": ["Couch", "Her hand", "Kitchen", "Table"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Yes! The beige couch — warm and comfortable.",
-      "wrongResponse": "No… not black, it was beige."
+      "correctResponse": "Right — she controls the universe.",
+      "wrongResponse": "Wrong. Stop looking under the couch."
     },
     {
-      "questionText": "What snack did I make?",
-      "choices": ["Cookies", "Chips", "Popcorn", "Pizza"],
+      "questionText": "Where are you supposed to sit?",
+      "choices": ["Floor", "Far away", "Next to her", "Outside"],
       "correctAnswerIndex": 2,
-      "correctResponse": "Exactly! Popcorn — burnt, but still good.",
-      "wrongResponse": "No… it wasn’t cookies, it was popcorn."
+      "correctResponse": "Correct — sit close (but not creepy close).",
+      "wrongResponse": "Incorrect. Why are you distancing like a weirdo?"
     },
     {
-      "questionText": "What drink did we have that night?",
-      "choices": ["Tea", "Coffee", "Juice", "Water"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! Just tea — no coffee that night.",
-      "wrongResponse": "No… not coffee. We had tea."
-    },
-    {
-      "questionText": "What was the lighting like in the room?",
-      "choices": ["Bright", "Only the screen", "Candlelight", "Lamp on"],
+      "questionText": "How should the lights be?",
+      "choices": ["Fully off", "Dim", "Bright", "Rainbow disco"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Right! Only the movie screen lit the room.",
-      "wrongResponse": "No… there wasn’t any candlelight, only the screen."
+      "correctResponse": "Right — dim = perfect mood.",
+      "wrongResponse": "Disco?? Calm down, rave-beast."
     },
     {
-      "questionText": "What color sweater was I wearing?",
-      "choices": ["Gray", "Red", "Blue", "White"],
+      "questionText": "What must you NOT do?",
+      "choices": ["Spoil the movie", "Laugh", "Blink", "Breathe"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Yes! That gray sweater I love — so cozy.",
-      "wrongResponse": "No… not blue, it was gray."
+      "correctResponse": "Correct — spoilers = instant breakup.",
+      "wrongResponse": "Wrong. She said NO spoilers!"
     },
     {
-      "questionText": "What did I say about sad endings?",
-      "choices": ["They feel more real", "They’re boring", "They’re fake", "They ruin movies"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly! I said they feel more real than happy ones.",
-      "wrongResponse": "No… I said they feel real, not boring."
+      "questionText": "What drink did she ask for?",
+      "choices": ["Coffee", "Milk", "Soda", "Water"],
+      "correctAnswerIndex": 2,
+      "correctResponse": "Yes! Soda delivery success.",
+      "wrongResponse": "Wrong. Milk during a movie? Psychopath behavior."
     },
     {
-      "questionText": "What did I say when you teased me for crying?",
-      "choices": ["I always cry", "It’s just dust", "It’s nothing", "I love emotional scenes"],
+      "questionText": "Why dim lights?",
+      "choices": ["Mood", "Bugs", "Fear", "Too bright"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Yes! I said I always cry — it’s who I am.",
-      "wrongResponse": "No… I didn’t say nothing, I said I always cry."
-    },
-    {
-      "questionText": "What was the background sound during the credits?",
-      "choices": ["Soft piano", "Wind", "Silence", "Thunder"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly! The soft piano from the end credits.",
-      "wrongResponse": "No… not silence. The piano played softly."
-    },
-    {
-      "questionText": "What did you say about the popcorn?",
-      "choices": ["It’s perfect", "It’s burnt", "It’s salty", "It’s bland"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! You said it was perfect, even though it was burnt.",
-      "wrongResponse": "No… you didn’t complain. You said it was perfect."
-    },
-    {
-      "questionText": "What did you say after the movie ended?",
-      "choices": ["That was perfect", "That was long", "I’m sleepy", "Let’s watch again"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly! You said that was perfect.",
-      "wrongResponse": "No… you didn’t say you’re sleepy, you said it was perfect."
-    },
-    {
-      "questionText": "What did I whisper at the end?",
-      "choices": ["Don’t forget this night", "Goodnight", "I love you", "See you tomorrow"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! I said don’t forget this night.",
-      "wrongResponse": "No… I didn’t say goodnight. I said don’t forget."
-    },
-    {
-      "questionText": "What did I call every movie we watched together?",
-      "choices": ["Perfect", "Too long", "Funny", "Sad"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly! I said every movie’s perfect when I’m with you.",
-      "wrongResponse": "No… I said perfect, not funny."
-    },
-    {
-      "questionText": "What emotion filled the night?",
-      "choices": ["Joy", "Sadness", "Fear", "Anger"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! Joy — that simple, peaceful happiness.",
-      "wrongResponse": "No… it wasn’t sadness."
-    },
-    {
-      "questionText": "What did you promise for next time?",
-      "choices": ["Make better popcorn", "Choose the movie", "Bring snacks", "Sleep early"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Right! You promised to make better popcorn next time.",
-      "wrongResponse": "No… you didn’t promise snacks, just better popcorn."
-    },
-    {
-      "questionText": "What sound was outside that night?",
-      "choices": ["Rain", "Wind", "Traffic", "Nothing"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! Rain — it matched the piano perfectly.",
-      "wrongResponse": "No… it wasn’t wind. It was rain."
-    },
-    {
-      "questionText": "What did I say about you laughing early?",
-      "choices": ["I love that about you", "You’re impatient", "It’s annoying", "You should wait"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Exactly! I said I love that about you.",
-      "wrongResponse": "No… I didn’t complain. I said I loved it."
-    },
-    {
-      "questionText": "What did I call that night?",
-      "choices": ["Perfect", "Peaceful", "Funny", "Sad"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes! Perfect — that night was everything I needed.",
-      "wrongResponse": "No… not sad. It was perfect."
+      "correctResponse": "Correct — ambiance baby.",
+      "wrongResponse": "Nope. Mood is everything."
     }
   ],
   "perfectAffectionBonus": 10,

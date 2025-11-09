@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene_cafe
+  m_EditorClassIdentifier: 
+  sceneName: scene_cafe
+  displayName: Cafe
+  backgroundSprite: {fileID: 21300000, guid: 0c10ee23b14114c8fb6e850127a41eb5, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "This place smells like happiness, doesn\u2019t it? I swear, if I could live
+    inside a cappuccino, I would."
+  - "Oh, by the way, I tried making coffee at home yesterday. Total disaster \u2014
+    I somehow made coffee taste like burnt toast."
+  - You remember my cat, Momo? He literally dipped his paw in my mug and then walked
+    all over the counter like a caffeine addict.
+  - "Anyway, this caf\xE9 reminds me of when I was in Goa last summer."
+  - "There was this tiny caf\xE9 near the beach \u2014 the owner had named all his
+    drinks after emotions!"
+  - "\u2018Espresso of Anger,\u2019 \u2018Mocha of Joy,\u2019 I had the \u2018Cappuccino
+    of Regret.\u2019 Don\u2019t laugh \u2014 it was actually good!"
+  - "I think I\u2019ll try something new here next time, maybe the Hazelnut Mocha."
+  - "What about you \u2014 oh wait, I forgot you don\u2019t talk much, huh?"
+  - "I like that though\u2026 quiet boys usually remember everything we say. Or at
+    least they should."
+  questions:
+  - questionText: What did I accidentally make my coffee taste like?
+    choices:
+    - Burnt toast
+    - Curry
+    - Lemon
+    - Mud
+    correctAnswerIndex: 0
+    correctResponse: "Right! Burnt toast \u2014 my proud barista fail."
+    wrongResponse: Nope! It was burnt toast, not whatever you guessed.
+  - questionText: Who dipped their paw in my coffee?
+    choices:
+    - "My neighbor\u2019s dog"
+    - My cat Momo
+    - My brother
+    - My friend
+    correctAnswerIndex: 1
+    correctResponse: Correct! Momo the cat was the caffeine criminal.
+    wrongResponse: "No\u2026 it was Momo, my cat! You forgot the troublemaker?"
+  - questionText: "What was special about the caf\xE9 in Goa I mentioned?"
+    choices:
+    - It was underwater
+    - It had drinks named after emotions
+    - It had parrots
+    - It played live jazz
+    correctAnswerIndex: 1
+    correctResponse: "Right! Every drink was named after emotions. \u2018Espresso
+      of Anger\u2019 was my favorite name."
+    wrongResponse: "No\u2026 I said the drinks were named after emotions!"
+  - questionText: "What drink did I say I had in that Goa caf\xE9?"
+    choices:
+    - Latte of Love
+    - Cappuccino of Regret
+    - Mocha of Joy
+    - Espresso of Anger
+    correctAnswerIndex: 1
+    correctResponse: "Exactly! The legendary \u2018Cappuccino of Regret.\u2019 I
+      swear it tasted like heartbreak and cinnamon."
+    wrongResponse: "Nope! It was \u2018Cappuccino of Regret.\u2019"
+  - questionText: What did I say I like about you?
+    choices:
+    - Your quietness
+    - Your laugh
+    - Your haircut
+    - Your sneakers
+    correctAnswerIndex: 0
+    correctResponse: "Right! I said I like that you\u2019re quiet\u2026 mysterious
+      types always win hearts."
+    wrongResponse: "No\u2026 I said I like your quietness. Don\u2019t make me change
+      my mind!"
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5

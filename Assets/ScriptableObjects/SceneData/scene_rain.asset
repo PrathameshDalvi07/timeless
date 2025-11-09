@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene_rain
+  m_EditorClassIdentifier: 
+  sceneName: scene_rain
+  displayName: Rain
+  backgroundSprite: {fileID: 21300000, guid: 512875972fd4146f8bfda92fa83ee5b0, type: 3}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "I love the smell of rain \u2014 it\u2019s like the world hits reset."
+  - "I used to dance in the rain when I was little. My mom would yell, but secretly
+    she\u2019d record me on her phone."
+  - "You know what\u2019s funny? I still hum the same song every time it rains \u2014
+    \u2018Raindrops Keep Fallin\u2019 On My Head.\u2019 Don\u2019t act like you don\u2019t
+    know it!"
+  - "I brought my favorite blue umbrella today \u2014 though it\u2019s technically
+    more of a kind of purple now because I spilled grape juice on it last week."
+  - "I always imagine this scene in a movie \u2014 two people sharing one umbrella,
+    one of them pretending not to be cold but totally shivering."
+  - "Don\u2019t look at me like that, I\u2019m fine!"
+  - Oh, and I made hot chocolate before coming here, but of course I forgot to bring
+    it. I even added those tiny marshmallows!
+  - "You know, people say rain makes some people sad, but it makes me\u2026 dramatic.
+    The good kind of dramatic."
+  questions:
+  - questionText: Which song do I hum when it rains?
+    choices:
+    - Let It Be
+    - "Raindrops Keep Fallin\u2019 On My Head"
+    - Umbrella
+    - Chasing Cars
+    correctAnswerIndex: 1
+    correctResponse: "Exactly! \u2018Raindrops Keep Fallin\u2019 On My Head.\u2019
+      Don\u2019t pretend you didn\u2019t sing along in your head."
+    wrongResponse: "No\u2026 it was \u2018Raindrops Keep Fallin\u2019 On My Head.\u2019
+      You forgot my rainy-day anthem!"
+  - questionText: What color is my umbrella now?
+    choices:
+    - Blue
+    - Purple
+    - Red
+    - Green
+    correctAnswerIndex: 1
+    correctResponse: "Right! It\u2019s kind of purple now \u2014 thanks to my grape
+      juice disaster."
+    wrongResponse: "Nope! I said it\u2019s kind of purple now, not blue!"
+  - questionText: What made my umbrella change color?
+    choices:
+    - Paint
+    - Ink
+    - Grape juice
+    - Rainwater
+    correctAnswerIndex: 2
+    correctResponse: Correct! I spilled grape juice on it. A very artistic accident.
+    wrongResponse: "No\u2026 I said grape juice made it purple! Pay attention next
+      time!"
+  - questionText: What hot drink did I make before coming here?
+    choices:
+    - Tea
+    - Hot chocolate
+    - Coffee
+    - Soup
+    correctAnswerIndex: 1
+    correctResponse: "Yes! Hot chocolate with tiny marshmallows \u2014 which I *forgot*
+      to bring."
+    wrongResponse: "No\u2026 it was hot chocolate. Don\u2019t act like you weren\u2019t
+      craving it too!"
+  - questionText: What kind of dramatic did I say rain makes me?
+    choices:
+    - Sad dramatic
+    - Good kind of dramatic
+    - Weird dramatic
+    - Hopeless romantic
+    correctAnswerIndex: 1
+    correctResponse: "Right! The good kind of dramatic \u2014 like main-character
+      energy dramatic."
+    wrongResponse: "Nope! I said the good kind of dramatic. You really weren\u2019t
+      listening, huh?"
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5
