@@ -18,6 +18,9 @@ namespace TimeLessLove.Managers
         [SerializeField] private GameObject gameplayPanel;
         [SerializeField] private GameObject questionPanel;
         [SerializeField] private GameObject resultPanel;
+        [SerializeField] private Image resultPopupPanel;
+        [SerializeField] private Sprite correctAnswerPanel;
+        [SerializeField] private Sprite wrongAnswerPanel;
         [SerializeField] private GameObject dialogueBoxPanel;
         [SerializeField] private GameObject hudPanel;
 
@@ -206,15 +209,25 @@ namespace TimeLessLove.Managers
         }
 
         /// <summary>
-        /// Shows the result of the answer
+        /// Shows the result of the answer with different panels for correct/wrong
         /// </summary>
         public void DisplayResult(bool correct, string responseText, int affectionChange)
         {
+            answeredCorrectly = correct;
             ShowPanel(resultPanel);
 
-            answeredCorrectly = correct;
 
-            // Set result text
+            // Show appropriate panel based on answer correctness
+            if (correct)
+            {
+                resultPopupPanel.sprite = correctAnswerPanel;
+            }
+            else
+            {
+                resultPopupPanel.sprite = wrongAnswerPanel;
+            }
+
+            // Set result text (works with both panels if they share the same component name)
             if (resultText != null)
             {
                 resultText.text = responseText;

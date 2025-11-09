@@ -3925,6 +3925,9 @@ MonoBehaviour:
   gameplayPanel: {fileID: 1799862694}
   questionPanel: {fileID: 2030068558}
   resultPanel: {fileID: 1336523048}
+  resultPopupPanel: {fileID: 1136792487}
+  correctAnswerPanel: {fileID: 21300000, guid: adafd55b059e54addb1d4f35cff8c04f, type: 3}
+  wrongAnswerPanel: {fileID: 21300000, guid: c82f4bc1a1ccf4f88a600de4147c42dd, type: 3}
   dialogueBoxPanel: {fileID: 1650937941}
   hudPanel: {fileID: 1031512225}
   nextDialogueButton: {fileID: 1752558035}
