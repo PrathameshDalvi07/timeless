@@ -6,6 +6,22 @@ using DG.Tweening;
 namespace TimeLessLove.Managers
 {
     /// <summary>
+    /// Serializable class to hold text with individual delay settings
+    /// </summary>
+    [System.Serializable]
+    public class TextRevealSettings
+    {
+        [TextArea(3, 10)]
+        public string text;
+
+        [Tooltip("Delay between each letter reveal")]
+        public float delayBetweenLetters = 0.05f;
+
+        [Tooltip("Delay after this sentence completes")]
+        public float delayAfterSentence = 1.0f;
+    }
+
+    /// <summary>
     /// Manages the intro scene with word-by-word text reveal animation
     /// Calls StartGame() after all text has been revealed
     /// </summary>
@@ -13,11 +29,10 @@ namespace TimeLessLove.Managers
     {
         [Header("Text Settings")]
         [SerializeField] private TextMeshProUGUI introTextField;
-        [SerializeField, TextArea(3, 10)] private string[] textToReveal;
+        [SerializeField] private TextRevealSettings[] textToReveal;
+        [SerializeField] private AudioClip voiceOverAudio;
 
         [Header("Reveal Settings")]
-        [SerializeField] private float delayBetweenLetters = 0.05f;
-        [SerializeField] private float delayBetweenSentences = 1.0f;
         [SerializeField] private float delayBeforeStart = 0.5f;
         [SerializeField] private float delayAfterEnd = 1.0f;
 
@@ -90,15 +105,21 @@ namespace TimeLessLove.Managers
                     .SetEase(Ease.InOutQuad);
             }
 
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(3f);
+            gameNameSR.DOFade(0f, 3f);
+            yield return new WaitForSeconds(7f);
 
+            PlayVoiceOverAudio();
             // Loop through each sentence
             for (int i = 0; i < textToReveal.Length; i++)
             {
-                string currentText = textToReveal[i];
+                TextRevealSettings settings = textToReveal[i];
+                string currentText = settings.text;
+
+                // Play voice-over audio for this text segment
 
                 // Create placeholder text for this sentence (all underscores)
-                string displayText = new('.', currentText.Length);
+                string displayText = new(' ', currentText.Length);
 
                 // Replace spaces with actual spaces in placeholder
                 char[] displayChars = displayText.ToCharArray();
@@ -126,13 +147,14 @@ namespace TimeLessLove.Managers
                     // Update the display text with bold formatting applied
                     introTextField.text = ApplyBoldToTimeLess(new(displayChars));
 
-                    yield return new WaitForSeconds(delayBetweenLetters);
+                    // Use the delay specific to this text line
+                    yield return new WaitForSeconds(settings.delayBetweenLetters);
                 }
 
-                // Delay between sentences (except after the last one)
+                // Delay after sentence using the specific delay for this line
                 if (i < textToReveal.Length - 1)
                 {
-                    yield return new WaitForSeconds(delayBetweenSentences);
+                    yield return new WaitForSeconds(settings.delayAfterSentence);
                 }
             }
 
@@ -184,6 +206,14 @@ namespace TimeLessLove.Managers
             text = text.Replace("TimeLess", "<b>TimeLess</b>");
             text = text.Replace("Eternal Bond.", "<b>Eternal Bond.</b>");
             return text;
+        }
+
+        /// <summary>
+        /// Plays voice-over audio for the given text segment index
+        /// </summary>
+        private void PlayVoiceOverAudio()
+        {
+            AudioManager.Instance.PlaySFX(voiceOverAudio);
         }
 
         /// <summary>
