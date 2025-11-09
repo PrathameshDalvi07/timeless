@@ -31,6 +31,7 @@ namespace TimeLessLove.Managers
         private List<QuestionData> currentQuestions;
         private int currentQuestionIndex = 0;
         private int correctAnswersCount = 0;
+        private bool isFirstDialogue = true; // Track if this is the first dialogue
 
         private enum GameState
         {
@@ -186,13 +187,35 @@ namespace TimeLessLove.Managers
 
             if (currentSceneData.dialogueLines != null && currentSceneData.dialogueLines.Length > 0)
             {
-                dialogueManager.StartDialogue(currentSceneData.dialogueLines);
+                // Add delay only for the first dialogue
+                if (isFirstDialogue)
+                {
+                    StartCoroutine(DelayedFirstDialogue());
+                    isFirstDialogue = false; // Set to false after first time
+                }
+                else
+                {
+                    dialogueManager.StartDialogue(currentSceneData.dialogueLines);
+                }
             }
             else
             {
                 Debug.LogWarning("No dialogue lines found, skipping to questions.");
                 OnDialogueCompleted();
             }
+        }
+
+        /// <summary>
+        /// Coroutine to delay the first dialogue
+        /// </summary>
+        private IEnumerator DelayedFirstDialogue()
+        {
+            yield return new WaitForSeconds(0.15f);
+            uiManager.EnableHUDPanel();
+            yield return new WaitForSeconds(0.75f);
+            uiManager.EnableDialoguePanel();
+            yield return new WaitForSeconds(0.5f);
+            dialogueManager.StartDialogue(currentSceneData.dialogueLines);
         }
 
         /// <summary>

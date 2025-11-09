@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
-using System.Collections.Generic;
+using DG.Tweening;
 using TimeLessLove.Data;
 
 namespace TimeLessLove.Managers
@@ -18,6 +18,8 @@ namespace TimeLessLove.Managers
         [SerializeField] private GameObject gameplayPanel;
         [SerializeField] private GameObject questionPanel;
         [SerializeField] private GameObject resultPanel;
+        [SerializeField] private GameObject dialogueBoxPanel;
+        [SerializeField] private GameObject hudPanel;
 
         [Header("Dialogue UI")]
         [SerializeField] private Button nextDialogueButton;
@@ -375,6 +377,17 @@ namespace TimeLessLove.Managers
             }
 
             selectedAnswerIndex = -1;
+        }
+
+        public void EnableDialoguePanel()
+        {
+            dialogueBoxPanel.SetActive(true);
+            dialogueBoxPanel.transform.DOScale(1f, 0.25f).SetEase(Ease.InSine);
+        }
+
+        public void EnableHUDPanel()
+        {
+            hudPanel.SetActive(true);
         }
     }
 }
