@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: scene_rain
   m_EditorClassIdentifier: 
   sceneName: scene_rain
-  displayName: Rain
+  displayName: Rain Walk
   backgroundSprite: {fileID: 21300000, guid: 512875972fd4146f8bfda92fa83ee5b0, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce60d7beb2b1c46a49495ebf7aeba2f6, type: 3}
+  m_Name: scene_movie
+  m_EditorClassIdentifier: 
+  sceneName: scene_movie
+  displayName: "Movie \u2013 Popcorn Disaster Night"
+  backgroundSprite: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  dialogueLines:
+  - "Okay, first of all \u2014 who puts salt and sugar on popcorn?"
+  - "You said it would be \u2018experimental.\u2019 Yeah, well, it was an experiment
+    in disaster."
+  - "And don\u2019t think I didn\u2019t notice you fell asleep halfway through the
+    movie!"
+  - I was crying during the sad scene, and you were literally snoring next to me.
+  - "You promised to make better popcorn next time \u2014 I\u2019m holding you to
+    that, mister."
+  - "Also, how do you forget the ending? It\u2019s the one where the dog saves the
+    day! You had one job!"
+  - Still... it was kind of cute watching you drool on the couch. Kind of.
+  questions:
+  - questionText: What did I say you mixed on the popcorn?
+    choices:
+    - Salt and sugar
+    - Butter and chocolate
+    - Cheese and caramel
+    - Pepper and lime
+    correctAnswerIndex: 0
+    correctResponse: "Right! Salt and sugar \u2014 your \u2018experimental\u2019
+      disaster."
+    wrongResponse: "No\u2026 I said you mixed salt and sugar, not that!"
+  - questionText: What did I catch you doing during the movie?
+    choices:
+    - Texting
+    - Sleeping
+    - Laughing
+    - Cooking
+    correctAnswerIndex: 1
+    correctResponse: Correct! You were totally sleeping while I was crying!
+    wrongResponse: "No\u2026 I said you fell asleep during the movie!"
+  - questionText: What did I say about the sad scene?
+    choices:
+    - I was crying
+    - It was boring
+    - "I didn\u2019t watch it"
+    - You laughed at it
+    correctAnswerIndex: 0
+    correctResponse: "Exactly! I was crying \u2014 unlike someone who was busy snoring."
+    wrongResponse: Nope! I said I was crying during that scene!
+  - questionText: What did you promise for next time?
+    choices:
+    - Make better popcorn
+    - Choose the movie
+    - Bring snacks
+    - Sleep early
+    correctAnswerIndex: 0
+    correctResponse: Right! You promised to make better popcorn next time.
+    wrongResponse: "No\u2026 you didn\u2019t promise snacks, just better popcorn."
+  - questionText: What did I say was kind of cute?
+    choices:
+    - You drooling on the couch
+    - You apologizing
+    - You choosing the movie
+    - You burning the popcorn
+    correctAnswerIndex: 0
+    correctResponse: "Exactly! You drooling on the couch \u2014 adorable in a tragic
+      way."
+    wrongResponse: "No\u2026 I said it was cute watching you drool on the couch!"
+  perfectAffectionBonus: 10
+  wrongAnswerPenalty: 5

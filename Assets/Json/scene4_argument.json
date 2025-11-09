@@ -1,57 +1,53 @@
 {
-  "sceneName": "scene2_argument",
-  "displayName": "Argument – Date Night Disagreement (Shortened)",
+  "sceneName": "scene_argument",
+  "displayName": "Argument – The Quiet Storm",
   "backgroundSprite": "backgrounds/apartment_evening.png",
-  "backgroundMusic": "audio/music/tense_piano_loop.mp3",
+  "backgroundMusic": "audio/music/soft_argument_theme.mp3",
   "dialogueLines": [
-    "I’m upset because you forgot date night.",
-    "You really need to listen better — it wasn’t a small thing.",
-    "Your sarcasm made it worse when I just wanted you to care.",
-    "Let’s talk it out later… after I get some space.",
-    "Next time, admit when you’re wrong and just try better."
+    "You know what’s funny? You always go quiet when things get serious.",
+    "Like, I start talking about something real, and suddenly you turn into a statue.",
+    "I’m not asking you to solve the world’s problems — just maybe nod? Or blink twice if you agree?",
+    "Last time we fought, you disappeared for two days. I thought you joined a monastery or something.",
+    "And then you came back with that same face — like you just forgot what happened!",
+    "I swear, arguing with you is like arguing with a mirror that occasionally sighs.",
+    "Anyway… I’m not mad. Just… disappointedly dramatic.",
+    "Which, let’s be honest, is my best look."
   ],
   "questions": [
     {
-      "questionText": "Why is she upset?",
-      "choices": ["Bad weather", "You forgot date night", "TV broke", "Cat escaped"],
+      "questionText": "What did I say you turn into when things get serious?",
+      "choices": ["A ghost", "A statue", "A wall", "A robot"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Correct. You messed up date night.",
-      "wrongResponse": "Nope. Weather didn’t ruin this — you did."
+      "correctResponse": "Exactly! A statue — because you go completely silent.",
+      "wrongResponse": "No… I said you turn into a statue, remember?"
     },
     {
-      "questionText": "What do you need to improve?",
-      "choices": ["Listening", "Dancing", "Cooking", "Running"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Yes — listening skills unlocked!",
-      "wrongResponse": "Wrong. This isn’t dance school."
-    },
-    {
-      "questionText": "What tone made things worse?",
-      "choices": ["Quiet", "Sarcastic", "Cute", "Serious"],
+      "questionText": "What did I say you did last time we fought?",
+      "choices": ["Cried", "Disappeared for two days", "Apologized", "Slept all day"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Right — sarcasm wasn’t helping.",
-      "wrongResponse": "Nope. The sass made it worse."
+      "correctResponse": "Right! You vanished for two days — like a magician with bad timing.",
+      "wrongResponse": "No… I said you disappeared for two days!"
     },
     {
-      "questionText": "What did she ask for before talking again?",
-      "choices": ["Space", "Apology", "Dinner", "Silence"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Correct — she needed space first.",
-      "wrongResponse": "No… she said she needed space, not silence."
-    },
-    {
-      "questionText": "What must you admit?",
-      "choices": ["You’re wrong", "She’s wrong", "Nobody’s wrong", "The moon is wrong"],
-      "correctAnswerIndex": 0,
-      "correctResponse": "Correct — accepting defeat builds character.",
-      "wrongResponse": "Nope. YOU are wrong. That’s the rule."
-    },
-    {
-      "questionText": "What does she want next time?",
-      "choices": ["Worse effort", "Better effort", "Same behavior", "Nothing"],
+      "questionText": "Where did I joke you might’ve gone?",
+      "choices": ["The mountains", "A monastery", "A party", "A movie marathon"],
       "correctAnswerIndex": 1,
-      "correctResponse": "Correct — do better next time!",
-      "wrongResponse": "Nope. She DEFINITELY didn’t ask for worse."
+      "correctResponse": "Correct! I said you probably joined a monastery.",
+      "wrongResponse": "Nope! I joked about you joining a monastery."
+    },
+    {
+      "questionText": "What did I compare arguing with you to?",
+      "choices": ["Talking to a mirror", "Talking to a brick wall", "Talking to a cat", "Talking to a robot"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! Like arguing with a mirror that occasionally sighs.",
+      "wrongResponse": "No… I said it’s like arguing with a mirror!"
+    },
+    {
+      "questionText": "How did I describe my mood at the end?",
+      "choices": ["Mad", "Disappointedly dramatic", "Happy", "Confused"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Right! I said I’m disappointedly dramatic — my best look, remember?",
+      "wrongResponse": "No… I said disappointedly dramatic, not mad!"
     }
   ],
   "perfectAffectionBonus": 10,

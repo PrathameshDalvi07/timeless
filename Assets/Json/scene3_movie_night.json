@@ -1,72 +1,52 @@
 {
-  "sceneName": "scene1_movie_time",
-  "displayName": "Movie Time – Cozy Rom-Com Night",
+  "sceneName": "scene_movie",
+  "displayName": "Movie – Popcorn Disaster Night",
   "backgroundSprite": "backgrounds/livingroom_evening.png",
   "backgroundMusic": "audio/music/cozy_movie_theme.mp3",
   "dialogueLines": [
-    "I brought popcorn and queued up a rom-com — no spoilers allowed.",
-    "The remote’s in my hand, and yes, I’m the director tonight.",
-    "Sit next to me, dim the lights, and grab me a soda.",
-    "Don’t even think about pausing — let the story flow.",
-    "Popcorn’s perfect, soda’s fizzing, and laughter’s incoming.",
-    "This night’s about comfort, not chaos — enjoy it with me."
+    "Okay, first of all — who puts salt and sugar on popcorn?",
+    "You said it would be ‘experimental.’ Yeah, well, it was an experiment in disaster.",
+    "And don’t think I didn’t notice you fell asleep halfway through the movie!",
+    "I was crying during the sad scene, and you were literally snoring next to me.",
+    "You promised to make better popcorn next time — I’m holding you to that, mister.",
+    "Also, how do you forget the ending? It’s the one where the dog saves the day! You had one job!",
+    "Still... it was kind of cute watching you drool on the couch. Kind of."
   ],
   "questions": [
     {
-      "questionText": "What snack did I bring?",
-      "choices": ["Chips", "Popcorn", "Candy", "Pizza"],
-      "correctAnswerIndex": 1,
-      "correctResponse": "Correct — popcorn makes everything better!",
-      "wrongResponse": "Nope. No chips. Just glorious popcorn."
-    },
-    {
-      "questionText": "Which genre are we watching?",
-      "choices": ["Horror", "Rom-com", "Action", "Sci-fi"],
-      "correctAnswerIndex": 1,
-      "correctResponse": "Yes! Love + comedy = perfect.",
-      "wrongResponse": "Nope. No spooky monsters tonight."
-    },
-    {
-      "questionText": "Where is the remote?",
-      "choices": ["Couch", "Her hand", "Kitchen", "Table"],
-      "correctAnswerIndex": 1,
-      "correctResponse": "Right — she controls the universe.",
-      "wrongResponse": "Wrong. Stop looking under the couch."
-    },
-    {
-      "questionText": "Where are you supposed to sit?",
-      "choices": ["Floor", "Far away", "Next to her", "Outside"],
-      "correctAnswerIndex": 2,
-      "correctResponse": "Correct — sit close (but not creepy close).",
-      "wrongResponse": "Incorrect. Why are you distancing like a weirdo?"
-    },
-    {
-      "questionText": "How should the lights be?",
-      "choices": ["Fully off", "Dim", "Bright", "Rainbow disco"],
-      "correctAnswerIndex": 1,
-      "correctResponse": "Right — dim = perfect mood.",
-      "wrongResponse": "Disco?? Calm down, rave-beast."
-    },
-    {
-      "questionText": "What must you NOT do?",
-      "choices": ["Spoil the movie", "Laugh", "Blink", "Breathe"],
+      "questionText": "What did I say you mixed on the popcorn?",
+      "choices": ["Salt and sugar", "Butter and chocolate", "Cheese and caramel", "Pepper and lime"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Correct — spoilers = instant breakup.",
-      "wrongResponse": "Wrong. She said NO spoilers!"
+      "correctResponse": "Right! Salt and sugar — your ‘experimental’ disaster.",
+      "wrongResponse": "No… I said you mixed salt and sugar, not that!"
     },
     {
-      "questionText": "What drink did she ask for?",
-      "choices": ["Coffee", "Milk", "Soda", "Water"],
-      "correctAnswerIndex": 2,
-      "correctResponse": "Yes! Soda delivery success.",
-      "wrongResponse": "Wrong. Milk during a movie? Psychopath behavior."
+      "questionText": "What did I catch you doing during the movie?",
+      "choices": ["Texting", "Sleeping", "Laughing", "Cooking"],
+      "correctAnswerIndex": 1,
+      "correctResponse": "Correct! You were totally sleeping while I was crying!",
+      "wrongResponse": "No… I said you fell asleep during the movie!"
     },
     {
-      "questionText": "Why dim lights?",
-      "choices": ["Mood", "Bugs", "Fear", "Too bright"],
+      "questionText": "What did I say about the sad scene?",
+      "choices": ["I was crying", "It was boring", "I didn’t watch it", "You laughed at it"],
       "correctAnswerIndex": 0,
-      "correctResponse": "Correct — ambiance baby.",
-      "wrongResponse": "Nope. Mood is everything."
+      "correctResponse": "Exactly! I was crying — unlike someone who was busy snoring.",
+      "wrongResponse": "Nope! I said I was crying during that scene!"
+    },
+    {
+      "questionText": "What did you promise for next time?",
+      "choices": ["Make better popcorn", "Choose the movie", "Bring snacks", "Sleep early"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Right! You promised to make better popcorn next time.",
+      "wrongResponse": "No… you didn’t promise snacks, just better popcorn."
+    },
+    {
+      "questionText": "What did I say was kind of cute?",
+      "choices": ["You drooling on the couch", "You apologizing", "You choosing the movie", "You burning the popcorn"],
+      "correctAnswerIndex": 0,
+      "correctResponse": "Exactly! You drooling on the couch — adorable in a tragic way.",
+      "wrongResponse": "No… I said it was cute watching you drool on the couch!"
     }
   ],
   "perfectAffectionBonus": 10,
