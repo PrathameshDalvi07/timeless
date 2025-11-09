@@ -13,42 +13,111 @@ MonoBehaviour:
   m_Name: Scene_Meeting
   m_EditorClassIdentifier: 
   sceneName: Meeting
-  displayName: "First Meeting at the Caf\xE9"
+  displayName: The Meeting
   backgroundSprite: {fileID: 21300000, guid: 0c10ee23b14114c8fb6e850127a41eb5, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
-  - Hi...!
-  - This place has the best coffee, don't you think?
-  - I come here every Thursday at 3 PM.
-  - Do you know I came from Dombivali.
-  - I like Icecream and Cake very much.
+  - This cafe always smells like cinnamon. I love it.
+  - "I always sit near the window\u2026 feels peaceful."
+  - "Hot chocolate just feels like a hug, doesn\u2019t it?"
+  - The piano music here is my favorite part.
+  - "I come here often when I\u2019m thinking."
+  - "Blue is calming\u2026 maybe that\u2019s why they painted the walls that color."
+  - The coffee here always tastes too bitter.
+  - Sunsets look so soft from here.
+  - I wore my favorite peach top today.
+  - Evening light makes everything feel warm.
+  - Cinnamon muffins here are amazing.
   questions:
-  - questionText: "What day did I say I come to this caf\xE9?"
+  - questionText: What did the cafe smell like?
     choices:
-    - Monday
-    - Thursday
-    - Saturday
-    - Sunday
+    - Vanilla
+    - Cinnamon
+    - Chocolate
+    - Bread
+    correctAnswerIndex: 1
+    correctResponse: Yes! You noticed that too.
+    wrongResponse: "Guess your nose wasn\u2019t paying attention."
+  - questionText: Where does I like to sit?
+    choices:
+    - Near window
+    - In corner
+    - By counter
+    - Outside
+    correctAnswerIndex: 0
+    correctResponse: Exactly! My favorite spot.
+    wrongResponse: "No, the window\u2026 it\u2019s where the light feels right."
+  - questionText: What drink I order?
+    choices:
+    - Coffee
+    - Hot Chocolate
+    - Tea
+    - Juice
     correctAnswerIndex: 1
     correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
-  - questionText: What time I come?
+    wrongResponse: "No coffee for me. I\u2019m all about chocolate."
+  - questionText: What kind of music played in the cafe?
     choices:
-    - 1 pm
-    - 2 pm
-    - 3 pm
-    - 4 pm
+    - Jazz
+    - Pop
+    - Piano
+    - None
     correctAnswerIndex: 2
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
-  - questionText: Where I Live ?
+    correctResponse: Yes! You were listening.
+    wrongResponse: "No pop songs today\u2026 just piano."
+  - questionText: What color was the cafe?
     choices:
-    - Ghatkopar
-    - Dombivali
-    - Dadar
-    - Sanpada
+    - Blue
+    - Red
+    - Green
+    - Brown
+    correctAnswerIndex: 0
+    correctResponse: "Right\u2026 blue always felt peaceful."
+    wrongResponse: No, silly! It was blue all around.
+  - questionText: What color was the cafe?
+    choices:
+    - Blue
+    - Red
+    - Green
+    - Brown
+    correctAnswerIndex: 0
+    correctResponse: "Right\u2026 blue always felt peaceful."
+    wrongResponse: No, silly! It was blue all around.
+  - questionText: What could be seen from the window?
+    choices:
+    - Cars
+    - Sunset
+    - Rain
+    - Streetlights
+    correctAnswerIndex: 0
+    correctResponse: "You remember the view\u2026 that\u2019s sweet."
+    wrongResponse: It was the sunset, silly.
+  - questionText: "What color was Aria\u2019s top?"
+    choices:
+    - Blue
+    - Peach
+    - White
+    - Gray
     correctAnswerIndex: 1
-    correctResponse: You remembered! That's so sweet!
-    wrongResponse: You... you weren't listening?
+    correctResponse: "Oh? You noticed my outfit? Cute.\u201D"
+    wrongResponse: "It was peach! You really didn\u2019t notice?"
+  - questionText: What pastry does Aria like?
+    choices:
+    - Croissant
+    - Muffin
+    - Donut
+    - Cake
+    correctAnswerIndex: 1
+    correctResponse: You remembered the muffin! Good job.
+    wrongResponse: "It wasn\u2019t the donut\u2026 you forgot my favorite snack."
+  - questionText: What time of day was it?
+    choices:
+    - Morning
+    - Afternoon
+    - Evening
+    - Night
+    correctAnswerIndex: 0
+    correctResponse: "You remember the view\u2026 that\u2019s sweet."
+    wrongResponse: It was the sunset, silly.
   perfectAffectionBonus: 10
   wrongAnswerPenalty: 10

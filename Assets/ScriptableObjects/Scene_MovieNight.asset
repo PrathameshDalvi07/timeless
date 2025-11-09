@@ -17,20 +17,94 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 5e634408c2dba4d2eb2dddf5c6ce911a, type: 3}
   backgroundMusic: {fileID: 0}
   dialogueLines:
-  - Hello for a Day..!
-  - I Like this Scared Movie..
-  - I also watch Harry Potter Movie
+  - "Popcorn\u2019s ready! But I might\u2019ve burned a few pieces\u2026"
+  - "Don\u2019t judge me if I cry, okay?"
+  - Why do love stories always end too soon?
+  - "This song in the background\u2026 it\u2019s beautiful."
+  - "The ending always gets me\u2026 every single time."
   questions:
-  - questionText: Which Movie I like The Most ?
+  - questionText: What snack did Aria bring?
     choices:
-    - Harry Potter
-    - Shah Rukh Khan
-    - Anime
-    - Salaam Khan
-    correctAnswerIndex: 3
+    - Chips
+    - Cookies
+    - Popcorn
+    - Candy
+    correctAnswerIndex: 2
+    correctResponse: Yep! Slightly burnt, but still good.
+    wrongResponse: "Nope, not cookies. Popcorn \u2014 my movie ritual."
+  - questionText: What does Aria think she might do during the movie?
+    choices:
+    - Fall asleep
+    - Cry
+    - Laugh
+    - Leave
+    correctAnswerIndex: 1
+    correctResponse: "You remembered\u2026 you always do."
+    wrongResponse: No, silly. I said cry.
+  - questionText: What kind of movie was it?
+    choices:
+    - Horror
+    - Love story
+    - Sci-fi
+    - Documentary
+    correctAnswerIndex: 1
+    correctResponse: "You remembered\u2026 my favorite kind."
+    wrongResponse: "No\u2026 it was a love story, like always."
+  - questionText: What was playing during the movie?
+    choices:
+    - Silence
+    - A song
+    - Credits
+    - Rain
+    correctAnswerIndex: 0
+    correctResponse: You noticed too. I like that.
+    wrongResponse: No, there was music! You missed it.
+  - questionText: What time was it during the scene?
+    choices:
+    - Scaries Moveis
+    - Fun Movies
+    - Documentry
+    - Suspense Movies
+    correctAnswerIndex: 0
     correctResponse: You remembered! That's so sweet!
     wrongResponse: You... you weren't listening?
-  - questionText: Which Jones Like the Most ?
+  - questionText: What part of the movie affects Aria?
+    choices:
+    - Start
+    - Middle
+    - Ending
+    - None
+    correctAnswerIndex: 2
+    correctResponse: It still makes my heart ache.
+    wrongResponse: "No, it\u2019s always the ending."
+  - questionText: ---
+    choices:
+    - Scaries Moveis
+    - Fun Movies
+    - Documentry
+    - Suspense Movies
+    correctAnswerIndex: 0
+    correctResponse: You remembered! That's so sweet!
+    wrongResponse: You... you weren't listening?
+  - questionText: ---
+    choices:
+    - Scaries Moveis
+    - Fun Movies
+    - Documentry
+    - Suspense Movies
+    correctAnswerIndex: 0
+    correctResponse: You remembered! That's so sweet!
+    wrongResponse: You... you weren't listening?
+  - questionText: ---
+    choices:
+    - Scaries Moveis
+    - Fun Movies
+    - Documentry
+    - Suspense Movies
+    correctAnswerIndex: 0
+    correctResponse: You remembered! That's so sweet!
+    wrongResponse: You... you weren't listening?
+  - questionText: ---
     choices:
     - Scaries Moveis
     - Fun Movies

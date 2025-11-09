@@ -51,7 +51,7 @@ namespace TimeLessLove.Managers
         private void Update()
         {
             // Allow skipping if enabled
-            if (canSkip && Input.GetKeyDown(skipKey) && isRevealing && !isComplete)
+            if (Input.GetKeyDown(skipKey))
             {
                 StopAllCoroutines();
                 CompleteIntro();

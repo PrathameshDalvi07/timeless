@@ -187,7 +187,6 @@ namespace TimeLessLove.Managers
             if (resultText != null)
             {
                 resultText.text = responseText;
-                resultText.color = correct ? correctAnswerColor : wrongAnswerColor;
             }
 
             // Set affection change text
@@ -195,7 +194,6 @@ namespace TimeLessLove.Managers
             {
                 string sign = affectionChange >= 0 ? "+" : "";
                 affectionChangeText.text = $"Affection: {sign}{affectionChange}";
-                affectionChangeText.color = affectionChange >= 0 ? correctAnswerColor : wrongAnswerColor;
             }
 
             Debug.Log($"<color={(correct ? "green" : "red")}>Result: {(correct ? "Correct" : "Wrong")}</color>");
