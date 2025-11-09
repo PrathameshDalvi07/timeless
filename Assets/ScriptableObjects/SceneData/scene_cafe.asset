@@ -23,11 +23,11 @@ MonoBehaviour:
     I somehow made coffee taste like burnt toast."
   - You remember my cat, Momo? He literally dipped his paw in my mug and then walked
     all over the counter like a caffeine addict.
-  - "Anyway, this caf\xE9 reminds me of when I was in Goa last summer."
-  - "There was this tiny caf\xE9 near the beach \u2014 the owner had named all his
-    drinks after emotions!"
-  - "\u2018Espresso of Anger,\u2019 \u2018Mocha of Joy,\u2019 I had the \u2018Cappuccino
-    of Regret.\u2019 Don\u2019t laugh \u2014 it was actually good!"
+  - Anyway, this cafe reminds me of when I was in Goa last summer.
+  - "There was this tiny cafe near the beach \u2014 the owner had named all his drinks
+    after emotions!"
+  - "Espresso of Anger, Mocha of Joy, I had the 'Cappuccino of Regret'. Don\u2019t
+    laugh \u2014 it was actually good!"
   - "I think I\u2019ll try something new here next time, maybe the Hazelnut Mocha."
   - "What about you \u2014 oh wait, I forgot you don\u2019t talk much, huh?"
   - "I like that though\u2026 quiet boys usually remember everything we say. Or at
@@ -61,7 +61,7 @@ MonoBehaviour:
     correctResponse: "Right! Every drink was named after emotions. \u2018Espresso
       of Anger\u2019 was my favorite name."
     wrongResponse: "No\u2026 I said the drinks were named after emotions!"
-  - questionText: "What drink did I say I had in that Goa caf\xE9?"
+  - questionText: What drink did I say I had in that Goa cafe?
     choices:
     - Latte of Love
     - Cappuccino of Regret
