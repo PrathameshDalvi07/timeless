@@ -107,12 +107,6 @@ namespace TimeLessLove.Managers
         {
             isRevealing = true;
 
-            // Optional fade in effect
-            if (fadeInImage != null)
-            {
-                fadeInImage.DOFade(1f, delayBeforeStart);
-            }
-
             StartAnimatedElements();
 
             // Initial delay before starting
@@ -168,6 +162,19 @@ namespace TimeLessLove.Managers
 
             // Wait after last sentence completes
             yield return new WaitForSeconds(delayAfterEnd);
+
+            outroTextField.text = "";
+
+            if (Camera.main != null)
+            {
+                Camera.main.transform.DOMoveY(Camera.main.transform.position.y + 10f, 10f)
+                    .SetEase(Ease.InOutQuad);
+            }
+
+            yield return new WaitForSeconds(7f);
+            
+            fadeInImage.DOFade(1f, delayBeforeStart);
+            yield return new WaitForSeconds(3f);
 
             // All text has been revealed
             CompleteOutro();

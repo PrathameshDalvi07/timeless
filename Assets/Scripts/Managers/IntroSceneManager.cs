@@ -75,12 +75,12 @@ namespace TimeLessLove.Managers
 
         private void Update()
         {
-            // Allow skipping if enabled
-            if (Input.GetKeyDown(skipKey))
-            {
-                StopAllCoroutines();
-                CompleteIntro();
-            }
+            // // Allow skipping if enabled
+            // if (Input.GetKeyDown(skipKey))
+            // {
+            //     StopAllCoroutines();
+            //     CompleteIntro();
+            // }
         }
 
         /// <summary>
