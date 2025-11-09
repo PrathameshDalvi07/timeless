@@ -152,7 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allSceneData:
+  - {fileID: 11400000, guid: 2b6688da9aca3468897695128febd1e8, type: 2}
+  - {fileID: 11400000, guid: c02a06ebfb2c5471cbae14ab17725890, type: 2}
   - {fileID: 11400000, guid: d1f9ac0fd78e041d18d91efdebb9745e, type: 2}
+  - {fileID: 11400000, guid: c4778f22c896c4036a0575f4a3991120, type: 2}
   playedScenesToday: []
   currentDayNumber: 1
 --- !u!4 &38215916
@@ -1151,8 +1154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77bf052a06464ebd9a1b53a3f39f2b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1800334489}
-  sfxSource: {fileID: 1800334490}
+  musicSource: {fileID: 1800334490}
+  sfxSource: {fileID: 1800334489}
   musicVolume: 0.7
   sfxVolume: 1
   musicFadeDuration: 1

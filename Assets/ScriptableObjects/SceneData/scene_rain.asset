@@ -18,13 +18,14 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   dialogueLines:
   - "I love the smell of rain \u2014 it\u2019s like the world hits reset."
-  - "I used to dance in the rain when I was little. My mom would yell, but secretly
-    she\u2019d record me on her phone."
-  - "You know what\u2019s funny? I still hum the same song every time it rains \u2014
-    \u2018Raindrops Keep Fallin\u2019 On My Head.\u2019 Don\u2019t act like you don\u2019t
-    know it!"
+  - "I actually used to dance in the rain when I was little. My mom would yell, but
+    secretly she\u2019d record me on her phone."
+  - "You know what\u2019s funny? I still hum the same song every time it rains. \u2018Raindrops
+    Keep Fallin\u2019 On My Head\u2019 \u2014 that old one. Don\u2019t act like you
+    don\u2019t know it!"
   - "I brought my favorite blue umbrella today \u2014 though it\u2019s technically
-    more of a kind of purple now because I spilled grape juice on it last week."
+    more of a \u2018kind of purple\u2019 now because I spilled grape juice on it
+    last week."
   - "I always imagine this scene in a movie \u2014 two people sharing one umbrella,
     one of them pretending not to be cold but totally shivering."
   - "Don\u2019t look at me like that, I\u2019m fine!"
@@ -71,7 +72,7 @@ MonoBehaviour:
     - Coffee
     - Soup
     correctAnswerIndex: 1
-    correctResponse: "Yes! Hot chocolate with tiny marshmallows \u2014 which I *forgot*
+    correctResponse: "Yes! Hot chocolate with tiny marshmallows \u2014 which I forgot
       to bring."
     wrongResponse: "No\u2026 it was hot chocolate. Don\u2019t act like you weren\u2019t
       craving it too!"
