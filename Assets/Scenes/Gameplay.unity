@@ -1895,7 +1895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1031512226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2889,7 +2889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1650937942
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2899,8 +2899,8 @@ RectTransform:
   m_GameObject: {fileID: 1650937941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 424008782}
   - {fileID: 567483934}
@@ -3925,6 +3925,8 @@ MonoBehaviour:
   gameplayPanel: {fileID: 1799862694}
   questionPanel: {fileID: 2030068558}
   resultPanel: {fileID: 1336523048}
+  dialogueBoxPanel: {fileID: 1650937941}
+  hudPanel: {fileID: 1031512225}
   nextDialogueButton: {fileID: 1752558035}
   dialogueProgressText: {fileID: 1720272796}
   questionText: {fileID: 841211619}
